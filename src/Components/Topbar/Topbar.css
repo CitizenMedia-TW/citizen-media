@@ -165,6 +165,8 @@
   background-repeat: no-repeat;
   background-size: 18px 18px;
   background-position: 95% center;
+  background-color: #eaeaea;
+  border-radius: 20px;
 }
 
 .navbar-title {
