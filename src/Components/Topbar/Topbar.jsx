@@ -2,7 +2,6 @@ import React from 'react'
 import {useState} from 'react';
 import './Topbar.css'
 import Logo from '../../Assets/Logo.png'
-import Vector from '../../Assets/Vector.png'
 import { Link } from 'react-router-dom'
 import * as FaIcons from "react-icons/fa";
 import { SidebarData } from '../Sidebar/Sidebardata';
