@@ -1,10 +1,10 @@
 import React from 'react'
 import './Sidebar.css'
 import {useState} from 'react';
-import LogoNoBG from '../../Assets/LogoNoBG.png'
+import LogoNoBG from '../../../Assets/LogoNoBG.png'
 import { Link } from 'react-router-dom'
 import * as FaIcons from "react-icons/fa";
-import { SidebarData } from '../Sidebar/Sidebardata';
+import { SidebarData } from './Sidebardata';
 
 const Sidebar = () => {
 

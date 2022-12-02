@@ -1,6 +1,6 @@
 import React from 'react'
 import './Topbar.css'
-import Logo from '../../Assets/Logo.png'
+import Logo from '../../../Assets/Logo.png'
 import { Link } from 'react-router-dom'
 import Sidebar from '../Sidebar/Sidebar';
 
