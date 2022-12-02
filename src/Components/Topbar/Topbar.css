@@ -149,9 +149,9 @@
 .search__container {
   display: flex;
   align-items: center;
-  margin-left: 10px;
-  margin-bottom: 18px;
-  margin-top: 18px;
+  justify-content: center;
+  margin-bottom: 12px;
+  margin-top: 12px;
 }
   
 .searchBar {
