@@ -165,6 +165,15 @@
   background-position: center right 1rem;
   background-color: #f3f3f3;
   border-radius: 20px;
+  transition: padding 100ms ease-in-out;
+}
+
+.searchBar:hover {
+	padding: 15px 22.5px;
+}
+
+.searchBar:focus {
+	padding: 15px 22.5px;
 }
 
 .navbar-title {
