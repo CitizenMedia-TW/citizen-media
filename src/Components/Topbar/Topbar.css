@@ -93,11 +93,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  border-bottom: 1px solid darkgray;
+  border-bottom: 1.5px solid lightgray;
 }
 
 .nav-menu {
-  background-color: #ffffff;
+  background-color: #f3f3f3;
   border-right: 1px solid #1e1e1e;
   width: 210px;
   height: 100vh;
@@ -105,13 +105,13 @@
   justify-content: center;
   position: fixed;
   top: 0;
-  left: -100%;
-  transition: 850ms;
+  left: -250px;
+  transition: 200ms;
 }
 
 .nav-menu.active {
   left: 0;
-  transition: 450ms;
+  transition: 200ms;
 }
 
 
@@ -127,19 +127,19 @@
 
 .nav-text a {
   text-decoration: none;
-  color: #151414;
+  color: #343434;
   font-size: 18px;
   width: 90%;
   height: 100%;
   display: flex;
   align-items: center;
   padding: 0 16px;
-  border-radius: 4px;
 }
 
 .nav-text a:hover {
   background-color: #000000;
   color: #fff;
+  border-radius: 10px;
 }
 
 .nav-menu-items {
@@ -149,30 +149,37 @@
 .search__container {
   display: flex;
   align-items: center;
-  margin-left: 10px;
-  margin-bottom: 18px;
-  margin-top: 18px;
+  justify-content: center;
+  margin-bottom: 12px;
+  margin-top: 12px;
 }
   
 .searchBar {
   padding: 12px 18px;
   outline: 0;
-  border: 1px solid transparent;
-  border-bottom: 1px solid #575756;
-  border-radius: 0;
-  background-position: 100% center;
+  border: none;
+  box-shadow: 4px 4px 10px rgba(163,177,198,0.5), -4px -4px 10px rgba(255, 255, 255, 0.7);
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg  xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cpath d='M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z'/%3E%3Cpath d='M0 0h24v24H0z' fill='none'/%3E%3C/svg%3E");
   background-repeat: no-repeat;
   background-size: 18px 18px;
-  background-position: 95% center;
-  background-color: #eaeaea;
+  background-position: center right 1rem;
+  background-color: #f3f3f3;
   border-radius: 20px;
+  transition: padding 100ms ease-in-out;
+}
+
+.searchBar:hover {
+	padding: 15px 22.5px;
+}
+
+.searchBar:focus {
+	padding: 15px 22.5px;
 }
 
 .navbar-title {
-  background-color: #ffffff;
+  background-color: #f3f3f3;
   width: 100%;
-  height: 60px;
+  height: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -192,7 +199,7 @@ span {
   width: 100%; 
   height: 85px; 
   /* border: 1px; */
-  background-color:white;
+  background-color: #f3f3f3;
 }
 
 .logo{
