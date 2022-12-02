@@ -26,11 +26,9 @@ const Topbar = () => {
       <nav className={sidebar ? "nav-menu active":"nav-menu"}>
           <ul className = "nav-menu-items" onMouseLeave={showSidebar}>
               <li className = "navbar-title"></li>
-              <div class="line"></div>
               <div className = "search__container">
                   <input class="searchBar" placeholder="搜尋"/>
               </div>
-              <div class="line"></div>
                               
               <div className = "main__item">
                   {SidebarData.map((item,index) => {
