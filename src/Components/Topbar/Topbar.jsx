@@ -10,20 +10,20 @@ const Topbar = () => {
 
   const[sidebar,setSidebar] = useState(false);
 
-  const showSidebar = () => setSidebar(!sidebar);
+  const toggleSidebar = () => setSidebar(!sidebar);
 
 
   return (
     <div className="top">
       <div className="topLeft">
           <Link to = "#" className = "menu-bars">
-              <FaIcons.FaBars onMouseEnter={showSidebar}/>
+              <FaIcons.FaBars onMouseEnter={toggleSidebar}/>
           </Link>
       </div>
 
       {/* sidebar功能 */}
       <nav className={sidebar ? "nav-menu active":"nav-menu"}>
-          <ul className = "nav-menu-items" onMouseLeave={showSidebar}>
+          <ul className = "nav-menu-items" onMouseLeave={toggleSidebar}>
               <li className = "navbar-title"></li>
               <div className = "search__container">
                   <input class="searchBar" placeholder="搜尋"/>
