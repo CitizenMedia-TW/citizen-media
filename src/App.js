@@ -1,7 +1,7 @@
 import React from "react";
 import { HashRouter as Router, Routes, Route } from 'react-router-dom'
 
-import Topbar from './Components/Topbar/Topbar'
+import Topbar from './Components/Layout/Topbar/Topbar'
 import HomePage from './Components/Pages/HomePage/HomePage'
 import LoginPage from './Components/Pages/LoginPage/LoginPage'
 import PoliticsPage from './Components/Pages/PoliticsPage/PoliticsPage'
