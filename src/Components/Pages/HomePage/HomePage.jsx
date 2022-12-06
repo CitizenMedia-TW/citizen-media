@@ -3,10 +3,11 @@ import React from "react";
 import Carousel from "./Carousel/Carousel.js";
 import Title from "./Title/Title.js";
 
+import "./HomePage.css";
 
 const HomePage = () => {
   return (
-    <div>
+    <div className="bg">
       <Title />
       <Carousel />
     </div>

@@ -5,12 +5,6 @@
   outline: solid #f00 1px !important;
 } */
 
-@import url(//fonts.googleapis.com/earlyaccess/notosanstc.css);
-
-* {
-  background-color: #414141;
-}
-
 .news_child {
   width: 120%;
   height: auto;
@@ -35,8 +29,7 @@
   line-height: 150%;
   letter-spacing: 0.1em;
 
-  margin-left: 4%;
-  margin-right: 4%;
+  margin: 2% 4%; 
 }
 
 .news_img {
@@ -112,6 +105,7 @@
   float: right;
   margin-right: 5%;
   margin-bottom: 2%;
+  padding: 0.5% 5%;
   border-radius: 19px;
   font-size: 100%;
   cursor: pointer;

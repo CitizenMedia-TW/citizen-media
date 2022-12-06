@@ -1,0 +1,28 @@
+.specials{
+    display: flex;
+    align-items: baseline;
+    justify-content: start;
+    margin-bottom: 2%;
+}
+
+.specials_title{
+    font-family: "Noto Sans HK";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 35px;
+    letter-spacing: 0.1em;
+  
+    color: #ffffff;
+  
+    margin-left: 2.5%;
+    margin-top: 2%;
+    margin-right: 4%;
+}
+
+.line{
+    width: 80%;
+
+    background-color: #838383;
+    border: 3px solid #838383;
+}

@@ -4,15 +4,16 @@ import Title from "./Title/Title.js";
 import TopNews from "./TopNews.js/TopNews.js";
 import SpecialNews from "./SpecialNews/SpecialNews.js";
 
+import "./PopularPage.css";
 
 const PopularPage = () => {
   return (
-    <>
+    <div className="bg">
       <Title />
       <TopNews />
       <SpecialNews />
       <SpecialNews />
-    </>
+    </div>
   );
 };
 
