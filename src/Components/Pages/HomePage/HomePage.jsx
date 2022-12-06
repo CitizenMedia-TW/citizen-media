@@ -7,7 +7,7 @@ import "./HomePage.css";
 
 const HomePage = () => {
   return (
-    <div className="bg">
+    <div className="home_bg">
       <Title />
       <Carousel />
     </div>

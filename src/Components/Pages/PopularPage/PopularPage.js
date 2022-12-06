@@ -8,7 +8,7 @@ import "./PopularPage.css";
 
 const PopularPage = () => {
   return (
-    <div className="bg">
+    <div className="popular_bg">
       <Title />
       <TopNews />
       <SpecialNews />
