@@ -23,7 +23,7 @@ const Sidebar = () => {
             <ul className = "nav-menu-items" onMouseLeave={toggleSidebar}>
                 <li className = "navbar-title"></li>
                 <div className = "search__container">
-                    <input class="searchBar" placeholder="搜尋"/>
+                    <input className="searchBar" placeholder="搜尋"/>
                 </div>
                                 
                 <div className = "main__item">
@@ -39,7 +39,7 @@ const Sidebar = () => {
                     })} 
                 </div>   
                 <div className="bottomBlock">
-                    <div class="line"></div>
+                    <div className="line"></div>
                     <img className="logo" src={LogoNoBG} alt="logo" />  
                 </div>
             </ul> 
