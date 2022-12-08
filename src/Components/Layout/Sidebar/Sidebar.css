@@ -128,7 +128,7 @@
 }
 
 .navbar-title {
-  background-color: var(--sidebar-nav-bar-title);
+  background-color: var(--sidebar-nav-bar-title-background);
   width: 100%;
   height: 50px;
   display: flex;
