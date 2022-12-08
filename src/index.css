@@ -11,3 +11,17 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+:root {
+    /* Sidebar */
+    --sidebar-menu-bars: White;
+    --sidebar-nav-bar-title: #f3f3f3;
+    --sidebar-nav-bar-background: #ffffff;
+    --sidebar-nav-text-hover-background: #000000;
+    --sidebar-nav-text-hover-color: #fff;
+    --sidebar-bottomBlock-background: #f3f3f3;
+
+    /* Topbar */
+    --topbar-background: #838383;
+    --topbar-link: White;
+}
