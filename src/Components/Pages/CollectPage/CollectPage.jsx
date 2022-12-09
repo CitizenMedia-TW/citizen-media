@@ -10,7 +10,7 @@ function CollectPage(){
                 {CollectPageData.map((item,index) => {
                     return (
                         <Link style={{textDecoration: 'none'}} to = {item.path} className = "collectBlock">
-                            <div className={item.cName}>
+                            <div className="collectText">
                                 <span>{item.title}</span>
                             </div> 
                         </Link>
