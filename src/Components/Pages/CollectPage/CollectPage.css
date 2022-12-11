@@ -1,9 +1,37 @@
-.gridBlock{
-    display: grid;
-    grid-template-columns: repeat(4, minmax(0, 1fr));
-	justify-content: center;
-	flex-grow: 1;
+
+@media (min-width: 600px){
+    .gridBlock{
+        margin-top: auto;
+        margin-bottom: 3em;
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        display: grid;
+        justify-content: center;
+        flex-grow: 1;
+    }
 }
+
+@media (max-width: 599px) { 
+    .gridBlock{
+        margin-top: auto;
+        margin-bottom: 3em;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        display: grid;
+        justify-content: center;
+        flex-grow: 1;
+    }
+}
+
+@media (max-width: 416px) { 
+    .gridBlock{
+        margin-top: auto;
+        margin-bottom: 3em;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        display: grid;
+        justify-content: center;
+        flex-grow: 1;
+    }
+}
+
 
 .collectBlock{
     width: calc(100% - 2rem);
