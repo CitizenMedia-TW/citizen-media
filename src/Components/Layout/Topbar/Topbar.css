@@ -1,7 +1,7 @@
 .top {
     width: 100%;
     height: 50px;
-    /* background-color: #838383; */
+    background-color: var(--topbar-background);
     position: sticky;
     top: 0;
     display: flex;
@@ -39,7 +39,7 @@
 }
 
 .link {
-    color: white;
+    color: var(--topbar-link);
     text-decoration: none;
 }
 
