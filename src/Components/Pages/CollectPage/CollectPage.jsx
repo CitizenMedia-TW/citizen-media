@@ -14,7 +14,7 @@ function CollectPage(){
                         <Link style={{textDecoration: 'none'}} to = {item.path} className = "collectBlock">
                             <div className="collectText">
                                 <span>{item.title}</span>
-								<img className="logo" src={LogoNoBG}></img>
+								<img className="logo" src={LogoNoBG} alt={item.title} />
                             </div> 
                         </Link>
                     )
