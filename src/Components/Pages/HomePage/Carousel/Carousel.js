@@ -1,50 +1,94 @@
-import React from "react";
-
-import OwlCarousel from 'react-owl-carousel';
-import 'owl.carousel/dist/assets/owl.carousel.css';
-import 'owl.carousel/dist/assets/owl.theme.default.css';
+import React, {useState, useEffect} from "react";
 
 import NewsBlock from "./NewsBlock.js";
 import "./Carousel.css";
-import news from "../../../Data/news.json";
 
 
-const Carousel = () => {
-  const options = {
-    loop: true,
-    center: true,
-    items: 3,
-    margin: 0,
-    autoplay: true,
-    dots: true,
-    autoplayTimeout: 8500,
-    smartSpeed: 450,
-    nav: false,
-    responsive: {
-        0: {
-            items: 1
-        },
-        600: {
-            items: 3
-        },
-        1000: {
-            items: 3
-        }
+const CarouselItem = ({children, width, onClick = f => f}) => {
+  return (
+    <div className="carousel-item" style={{width: width}} onClick={onClick}>
+      {children}
+    </div>
+  ); 
+};
+
+const Carousel = ({dataset}) => {
+  const [activeIndex, setActiveIndex] = useState(0);
+  const [pause, setPause] = useState(false);
+  const length = dataset.length;
+
+  const updateIndex = (newIndex) => {
+    if (newIndex < 0) {
+      newIndex = length - 1;
     }
+    else if (newIndex >= length) {
+      newIndex = 0;
+    }
+
+    setActiveIndex(newIndex);
   };
 
+  // useEffect(() => {
+  //   const interval = setInterval(() => {
+  //     if (!pause) {
+  //       updateIndex(activeIndex + 1);
+  //     }
+  //   }, 1000);
+
+  //   return () => {
+  //     if (interval) {
+  //       clearInterval(interval);
+  //     }
+  //   };
+  // });
+
   return (
-    <OwlCarousel id= "carousel" className="owl-carousel owl-theme" {...options}>
-      {
-        news.length === 0 ?
-          <h2>No News</h2> :
-          news.map(news => {
+    <div 
+      className="carousel"
+      onMouseEnter={() => setPause(true)}
+      onMouseLeave={() => setPause(false)}
+    >
+      <div className="inner" style={{transform: `translateX(${-(activeIndex - 1) * (100 / 3)}%)`}}>
+        {
+          dataset.map((data, index) => {
             return (
-              <NewsBlock newsDetail={news} />
+              <CarouselItem width={`${100 / 3}%`} onClick={() => setActiveIndex(index)}
+              >
+                <NewsBlock newsDetail={data} />
+              </CarouselItem>
             );
           })
-      }
-    </OwlCarousel>
+        }
+      </div>
+      <div className="indicators">
+        <button onClick={() => {
+          updateIndex(activeIndex - 1);
+        }}>
+          Prev 
+        </button>
+
+        {
+          dataset.map((data, index) => {
+            return (
+              <button 
+                className={`${index === activeIndex ? "active" : ""}`}
+                onClick={() => {
+                  updateIndex(index);
+                }}
+              >
+                {index + 1}
+              </button>
+            );
+          })
+        }
+
+        <button onClick={() => {
+          updateIndex(activeIndex + 1);
+        }}>
+          Next 
+        </button>
+      </div>
+    </div>
   );
 };
 
