@@ -8,10 +8,14 @@
     align-items: center;
     font-family: 'Josefin Sans', sans-serif;
     z-index: 99;
+
+    box-shadow: 4px 4px 10px rgba(163,177,198,0.5), -4px -4px 10px rgba(255, 255, 255, 0.7);
+    background-position: center right 1rem;
+    background-color: black;
 }
 
 .topbarLogo {
-    height: 50px;
+    height: 53px;
 }
 
 .topbarVector {
