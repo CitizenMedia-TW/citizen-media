@@ -17,7 +17,6 @@ const SpecialNews = () => {
         <NewsBlock newsDetail={news[0]}/>
         <NewsBlock newsDetail={news[0]}/>
         <NewsBlock newsDetail={news[0]}/>
-        <NewsBlock newsDetail={news[0]}/>
       </div>
     </>
   );

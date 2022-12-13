@@ -1,6 +1,7 @@
 .popular_item {
     width: 100%;
 
+    margin-left: 1.5%;
     margin-bottom: 2%;
 
     display: inline;
@@ -8,7 +9,7 @@
 }
   
 .popular_news_child {
-    max-width: 17%;
+    max-width: 20%;
     height: auto;
   
     background-color: #414141;
@@ -20,7 +21,7 @@
     margin-right: 1%;
   
     display: inline-block;
-    filter: drop-shadow(8px 10px 10px rgba(255, 255, 255, 0.3));
+    filter: drop-shadow(8px 10px 10px rgba(255, 255, 255, 0.4));
 }
   
 .popular_news_title {
@@ -31,7 +32,7 @@
     font-family: "Noto Sans HK";
     font-style: normal;
     font-weight: 700;
-    font-size: 75%;
+    font-size: 80%;
     line-height: 175%;
     letter-spacing: 0.1em;
   
@@ -39,13 +40,14 @@
 }
   
 .popular_news_img {
-    max-width: 90%;
+    max-width: 60%;
   
     display: block;
     margin: auto;
   
     border-radius: 2px;
-    margin-bottom: 2%;
+    margin-top: 2%;
+    margin-bottom: 4%;
 }
   
 .popular_news_info {
@@ -53,10 +55,10 @@
     background-color: rgba(0, 0, 0, 0);
 
     font-family: "Noto Sans TC";
-    font-size: 50%;
+    font-size: 35%;
   
     margin-left: 4.5%;
     margin-right: 4.5%;
-    margin-bottom: 2%;
+    margin-bottom: 4%;
 }
   
