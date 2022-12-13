@@ -6,7 +6,7 @@
 } */
 
 .news_child {
-  width: 100%;
+  width: 80%;
   height: auto;
 
   opacity: 100%;
@@ -20,10 +20,11 @@
 }
 
 .news_title {
-  background-color: #d9d9d9;
-
-  font-family: "Noto Sans TC";
   color: #000000;
+  background-color: #d9d9d9;
+  
+  white-space: pre-wrap;
+  font-family: "Noto Sans TC";
   font-size: 100%;
   font-weight: 700;
   line-height: 150%;
@@ -42,6 +43,20 @@
   margin-bottom: 2%;
 }
 
+.news_info{
+  color: #414141;
+  
+  font-family: "Noto Sans TC";
+  font-size: 50%;
+
+  overflow:hidden;
+  text-overflow: ellipsis;
+
+  margin-left: 4.5%;
+  margin-right: 4.5%;
+  margin-bottom: 2%;
+}
+
 .carousel {
   overflow: hidden;
 }
@@ -55,21 +70,67 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  height: 500px;
-  background-color: green;
+
+  max-width: 90%;
+  max-height: 80%;
+
+  background-color: #414141;
   color: #fff;
+
+  margin: 2% 0.5% 1% 0.5%;
 }
 
 .indicators {
   display: flex;
   justify-content: center;
+  font-family: "Noto Sans TC";
 }
 
 .indicators > button {
-  margin: 5px;
+  margin: 0.25%;
+  padding: 0.25% 0.5%;
+
+  border-radius: 2px;
+  border-color: rgba(0, 0, 0, 0.0);
 }
 
 .indicators > button.active {
-  background-color: green;
+  background-color: #414141;
   color: #fff;
+  border: 2px solid #fff;
+}
+
+.indicators :hover{
+  background-color: #414141;
+  color: #fff;
+  cursor: pointer; 
+  border: 2px solid #fff;
+}
+
+.button_more_info {
+  background-color: #838383;
+  color: #ffffff;
+
+  float: right;
+  margin-right: 5%;
+  margin-bottom: 2%;
+  padding: 0.5% 2%;
+  border-radius: 19px;
+  
+  font-family: "Noto Sans TC";
+  font-size: 85%;
+  cursor: pointer;
+}
+
+.button_more_info:hover {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.page_button{
+  font-size: 50%;
+  letter-spacing: 0.05em;
+
+  border-radius: 5px;
+  border-color: rgba(0, 0, 0, 0.0);
 }

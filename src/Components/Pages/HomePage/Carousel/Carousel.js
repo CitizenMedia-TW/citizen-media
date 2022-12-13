@@ -52,7 +52,7 @@ const Carousel = ({dataset}) => {
         {
           dataset.map((data, index) => {
             return (
-              <CarouselItem width={`${100 / 3}%`} onClick={() => setActiveIndex(index)}
+              <CarouselItem  width={`${100 / 3}%`} onClick={() => setActiveIndex(index)}
               >
                 <NewsBlock newsDetail={data} />
               </CarouselItem>
@@ -61,7 +61,7 @@ const Carousel = ({dataset}) => {
         }
       </div>
       <div className="indicators">
-        <button onClick={() => {
+        <button className="page_button" onClick={() => {
           updateIndex(activeIndex - 1);
         }}>
           Prev 
@@ -82,7 +82,7 @@ const Carousel = ({dataset}) => {
           })
         }
 
-        <button onClick={() => {
+        <button className="page_button" onClick={() => {
           updateIndex(activeIndex + 1);
         }}>
           Next 
