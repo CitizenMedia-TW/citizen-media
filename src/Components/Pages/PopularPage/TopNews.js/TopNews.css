@@ -5,9 +5,9 @@
 } */
 
 .top_news_container{
-    margin-left: 2.5%;
+    margin-left: 7.5%;
     margin-right: 2.5%;
-    width: 95%;
+    width: 90%;
 
     display: inline-flex;
     align-items: flex-end;
@@ -77,7 +77,7 @@
     margin-right: 4%;
 
     border-left: 3px solid #838383;
-    height: 350px;
+    height: 300px;
 }
 
 .second_news_item{
