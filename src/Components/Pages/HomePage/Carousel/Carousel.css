@@ -47,10 +47,13 @@
   color: #414141;
   
   font-family: "Noto Sans TC";
-  font-size: 50%;
+  font-size: 90%;
 
-  overflow:hidden;
-  text-overflow: ellipsis;
+  white-space: pre-wrap;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
 
   margin-left: 4.5%;
   margin-right: 4.5%;

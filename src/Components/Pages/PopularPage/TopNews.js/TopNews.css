@@ -16,7 +16,6 @@
 .top_news_item{
     max-width: 40%;
     margin-left: 5%;
-
     padding-left: 5%;
 }
 
@@ -26,7 +25,7 @@
   
     background-color: #414141;
 
-    border: 5px solid #d9d9d9;
+    border: 3.5px solid #d9d9d9;
     border-radius: 5px;
 
     margin-left: 3%;
@@ -40,13 +39,14 @@
     color: #d9d9d9;
     background-color: rgba(0, 0, 0, 0);
 
-    font-family: "Noto Sans HK";
+    font-family: "Noto Sans TC";
     font-style: normal;
     font-weight: 700;
     font-size: 120%;
     line-height: 175%;
     letter-spacing: 0.1em;
   
+    margin: 1% 1.5%;
     padding: 2%;
 }
 
@@ -57,7 +57,6 @@
     margin: auto;
   
     border-radius: 2px;
-    margin-bottom: 2%;
 }
 
 .top_news_info{
@@ -65,11 +64,14 @@
     background-color: rgba(0, 0, 0, 0);
 
     font-family: "Noto Sans TC";
-    font-size: 90%;
+    font-size: 95%;
   
-    margin-left: 4.5%;
-    margin-right: 4.5%;
-    margin-bottom: 2%;
+    margin: 3% 4.5%;
+
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
 }
 
 .vertical_line{
@@ -77,7 +79,7 @@
     margin-right: 4%;
 
     border-left: 3px solid #838383;
-    height: 300px;
+    height: 320px;
 }
 
 .second_news_item{
@@ -91,7 +93,7 @@
   
     background-color: #414141;
 
-    border: 5px solid #d9d9d9;
+    border: 3.5px solid #d9d9d9;
     border-radius: 5px;
 
     margin-left: 3%;
@@ -106,13 +108,14 @@
     background-color: rgba(0, 0, 0, 0);
 
 
-    font-family: "Noto Sans HK";
+    font-family: "Noto Sans TC";
     font-style: normal;
     font-weight: 700;
-    font-size: 90%;
+    font-size: 100%;
     line-height: 175%;
     letter-spacing: 0.1em;
   
+    margin: 1% 1.5%;
     padding: 2%;
 }
 
@@ -131,9 +134,12 @@
     background-color: rgba(0, 0, 0, 0);
 
     font-family: "Noto Sans TC";
-    font-size: 60%;
+    font-size: 85%;
   
-    margin-left: 4.5%;
-    margin-right: 4.5%;
-    margin-bottom: 2%;
+    margin: 3% 5%;
+
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
 }
