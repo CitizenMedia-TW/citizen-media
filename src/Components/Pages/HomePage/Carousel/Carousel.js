@@ -4,9 +4,14 @@ import NewsBlock from "./NewsBlock.js";
 import "./Carousel.css";
 
 
-const CarouselItem = ({children, width, onClick = f => f}) => {
+const CarouselItem = ({children, width, isActive=false, onClick = f => f}) => {
   return (
-    <div className="carousel-item" style={{width: width}} onClick={onClick}>
+    <div 
+      className="carousel-item"
+      id={`${isActive ? "active-item" : ""}`}
+      style={{width: width}} 
+      onClick={onClick}
+    >
       {children}
     </div>
   ); 
@@ -28,19 +33,19 @@ const Carousel = ({dataset}) => {
     setActiveIndex(newIndex);
   };
 
-  // useEffect(() => {
-  //   const interval = setInterval(() => {
-  //     if (!pause) {
-  //       updateIndex(activeIndex + 1);
-  //     }
-  //   }, 1000);
+  useEffect(() => {
+    const interval = setInterval(() => {
+      if (!pause) {
+        updateIndex(activeIndex + 1);
+      }
+    }, 3000);
 
-  //   return () => {
-  //     if (interval) {
-  //       clearInterval(interval);
-  //     }
-  //   };
-  // });
+    return () => {
+      if (interval) {
+        clearInterval(interval);
+      }
+    };
+  });
 
   return (
     <div 
@@ -52,13 +57,23 @@ const Carousel = ({dataset}) => {
         {
           dataset.map((data, index) => {
             return (
-              <CarouselItem  width={`${100 / 3}%`} onClick={() => setActiveIndex(index)}
+              <CarouselItem  
+                width={`${100 / 3}%`} 
+                onClick={() => setActiveIndex(index)}
+                isActive={index === activeIndex}
               >
                 <NewsBlock newsDetail={data} />
               </CarouselItem>
             );
           })
         }
+        <div
+          className="carousel-more"
+          width={`${100 / 3}%`}
+          onClick={() => console.log("More")}
+        >
+          更多內容
+        </div>
       </div>
       <div className="indicators">
         <button className="page_button" onClick={() => {

@@ -81,6 +81,25 @@
   color: #fff;
 
   margin: 2% 0.5% 1% 0.5%;
+  transform: scale3d(0.8, 0.8, 1);
+  transition: all 0.3s ease-in-out;
+}
+
+.carousel-more {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  max-width: 90%;
+  max-height: 80%;
+
+  background-color: #414141;
+  color: #fff;
+  margin: 2% 0.5% 1% 0.5%;
+}
+
+#active-item {
+  transform: scale3d(1.0, 1.0, 1);
 }
 
 .indicators {
