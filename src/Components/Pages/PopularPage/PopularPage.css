@@ -1,0 +1,9 @@
+::-webkit-scrollbar{
+    display:none;
+}
+
+.popular_bg{
+    background-color: #414141;
+    padding-top: 0.2%;
+    padding-bottom: 5%;
+}

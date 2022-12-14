@@ -1,0 +1,11 @@
+.popular_title_text{
+    font-family: "Noto Sans TC";
+    font-size: 275%;
+    text-align: left;
+    font-weight: bold;
+    color: #ffffff;
+  
+    margin-left: 20%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
