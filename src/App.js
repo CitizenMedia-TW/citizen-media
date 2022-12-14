@@ -10,6 +10,7 @@ import NotifyPage from "./Components/Pages/NotifyPage/NotifyPage";
 import SettingPage from "./Components/Pages/SettingPage/SettingPage";
 import DraftPage from "./Components/Pages/DraftPage/DraftPage";
 import CollectPage from "./Components/Pages/CollectPage/CollectPage";
+import PopularPage from "./Components/Pages/PopularPage/PopularPage";
 
 const App = () => {
   return (
@@ -18,7 +19,7 @@ const App = () => {
         <Routes>
             <Route exact path="/" element={ <HomePage /> } />
             <Route exact path="/login" element={ <LoginPage /> } />
-            <Route exact path="/politics" element={ <PoliticsPage /> } />
+            <Route exact path="/politics" element={ <PopularPage /> } />
             <Route exact path="/notify" element={ <NotifyPage /> } />
             <Route exact path="/setting" element={ <SettingPage /> } />
             <Route exact path="/draft" element={ <DraftPage /> } />

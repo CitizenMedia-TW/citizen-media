@@ -1,0 +1,9 @@
+::-webkit-scrollbar{
+    display:none;
+}
+
+.home_bg{
+    background-color: #414141;
+    padding-top: 0.2%;
+    padding-bottom: 10%;
+}
