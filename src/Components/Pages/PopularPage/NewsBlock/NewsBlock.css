@@ -1,15 +1,13 @@
 .popular_item {
-    width: 100%;
+	margin-left: 5%;
+	margin-bottom: 2%;
+	flex-grow: 1;
+	max-width: 18.5%;
 
-    margin-left: 5%;
-    margin-bottom: 2%;
-
-    display: inline;
     text-align: left;
 }
   
 .popular_news_child {
-    max-width: 18.5%;
     height: auto;
   
     background-color: #414141;
@@ -56,6 +54,6 @@
     display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 2;
-    overflow: hidden;
+	overflow: hidden;
 }
-  
+
