@@ -1,8 +1,9 @@
 import React from "react";
+import { Link } from 'react-router-dom'
 
 
 const NewsBlock = ({newsDetail}) => {
-  const {title, description, img} = newsDetail;
+  const {title, description, img, id} = newsDetail;
 
   return (
     <div className="news_child">
@@ -10,9 +11,9 @@ const NewsBlock = ({newsDetail}) => {
       <img className="news_img" src={img} alt="" />
       <p className="news_info">{description}</p>
 
-      <a href="https://google.com" target="_blank" rel="noreferrer">
+      <Link to = {`/news/${id}`} rel="noreferrer">
         <button className="button_more_info">更多內容...</button>
-      </a>
+      </Link>
     </div>
   );
 };

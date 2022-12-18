@@ -1,5 +1,5 @@
 import React from "react";
-import { HashRouter as Router, Routes, Route } from 'react-router-dom'
+import { HashRouter as Router, Routes, Route, useParams  } from 'react-router-dom'
 
 import Topbar from './Components/Layout/Topbar/Topbar'
 import HomePage from './Components/Pages/HomePage/HomePage'
@@ -11,6 +11,7 @@ import SettingPage from "./Components/Pages/SettingPage/SettingPage";
 import DraftPage from "./Components/Pages/DraftPage/DraftPage";
 import CollectPage from "./Components/Pages/CollectPage/CollectPage";
 import PopularPage from "./Components/Pages/PopularPage/PopularPage";
+import NewsPage from "./Components/Pages/NewsPage/NewsPage";
 
 const App = () => {
   return (
@@ -24,9 +25,17 @@ const App = () => {
             <Route exact path="/setting" element={ <SettingPage /> } />
             <Route exact path="/draft" element={ <DraftPage /> } />
             <Route exact path="/collect" element={ <CollectPage /> } />
+            <Route exact path="/news/:id" element={<Getnews />} />
         </Routes>
     </Router>
   );
+}
+
+function Getnews() {
+  // 👇️ get ID from url
+  const params = useParams();
+  
+  return [`${params.id}`];
 }
 
 export default App;
