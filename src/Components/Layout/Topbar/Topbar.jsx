@@ -19,8 +19,8 @@ const Topbar = () => {
             </Link>
           </li>
           <li className="topCenter-ListItem">
-            <Link className="link" to="/politics">
-              Politics
+            <Link className="link" to="/popular">
+              Popular
             </Link>
           </li>
         </ul>
