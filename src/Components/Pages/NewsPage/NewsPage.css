@@ -18,11 +18,45 @@
     word-wrap: break-word;
 }
 
+/* 讓author, banner跟status可以並排 */
+.news_page_writerBlock{
+    display:inline-block;
+}
+
+.news_page_author{
+    color: white;
+    font-family: "Noto Sans TC";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    margin-left: 19.5em;
+    margin-top: 1.5em;
+}
+
+.news_page_status{
+    color: white;
+    font-family: "Noto Sans TC";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 10px;
+    margin-left: 35em;
+}
+
+.news_page_banner{
+    border-radius: 50%;
+    margin-left: 18em;
+    margin-top: -1.5em;
+    max-width: 4%;
+    aspect-ratio : 1 / 1;
+    object-fit:cover;
+    float:left;
+}
+
 .news_page_img{
     max-width: 35%;
+    display: flex;
     margin-left: 18em;
-    padding-top: 5em;
-  
+    padding-top: 2em;
     border-radius: 2px;
 }
 
@@ -33,7 +67,7 @@
     font-weight: 700;
     font-size: 100%;
     margin-left:18em;
-    padding-top: 2em;
+    padding-top: 1.5em;
 
     width: 450px; 
     word-break: break-all;

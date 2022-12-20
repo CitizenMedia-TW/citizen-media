@@ -25,17 +25,10 @@ const App = () => {
             <Route exact path="/setting" element={ <SettingPage /> } />
             <Route exact path="/draft" element={ <DraftPage /> } />
             <Route exact path="/collect" element={ <CollectPage /> } />
-            <Route exact path="/news/:id" element={<Getnews />} />
+            <Route exact path="/news/:id" element={<NewsPage/>} />
         </Routes>
     </Router>
   );
-}
-
-function Getnews() {
-  // 👇️ get ID from url
-  const params = useParams();
-  
-  return [`${params.id}`];
 }
 
 export default App;
