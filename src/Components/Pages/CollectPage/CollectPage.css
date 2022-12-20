@@ -36,15 +36,19 @@
 .collectBlock{
     width: calc(100% - 2rem);
 	aspect-ratio: 1 / 1;
+
 	margin-left: 1rem;
 	margin-right: 1rem;
 	margin-top: 1rem;
 	margin-bottom: 1rem;
+    
     color:black;
+
     box-shadow: 8px 8px 10px rgba(163,177,198,0.5), -4px -4px 10px rgba(255, 255, 255, 0.7);
     background-position: center right 1rem;
     background-color: #f3f3f3;
     border-radius: 20px;
+
     transition: padding 100ms ease-in-out;
 }
 
@@ -59,13 +63,25 @@
 } */
 
 .collectText{
-    margin-left: 5px;
-	margin-right: 5px;
     margin-top: 10px;
 	margin-bottom: 10px;
-    font-size: 20px;
+
+    font-family: "Noto Sans TC";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+
 	display: flex;
 	height: 100%;
-	width: 100%;
+	width: 95%; 
+    word-break: break-all;
+    word-wrap: break-word;
 	flex-direction: column;
+}
+
+.collect_img{
+    max-width:75%;
+    aspect-ratio: 1 / 1;
+    margin: auto;
+    object-fit:cover;
 }

@@ -12,6 +12,7 @@ import DraftPage from "./Components/Pages/DraftPage/DraftPage";
 import CollectPage from "./Components/Pages/CollectPage/CollectPage";
 import PopularPage from "./Components/Pages/PopularPage/PopularPage";
 import NewsPage from "./Components/Pages/NewsPage/NewsPage";
+import NewsPageMain from "./Components/Pages/NewsPage/NewsPageMain";
 
 const App = () => {
   return (
@@ -25,7 +26,7 @@ const App = () => {
             <Route exact path="/setting" element={ <SettingPage /> } />
             <Route exact path="/draft" element={ <DraftPage /> } />
             <Route exact path="/collect" element={ <CollectPage /> } />
-            <Route exact path="/news/:id" element={<NewsPage/>} />
+            <Route exact path="/news/:id" element={<NewsPageMain />} />
         </Routes>
     </Router>
   );
