@@ -1,4 +1,5 @@
 import React, {useState, useEffect} from "react";
+import {FaArrowLeft, FaArrowRight} from "react-icons/fa"
 
 import NewsBlock from "./NewsBlock.js";
 import "./Carousel.css";
@@ -84,13 +85,19 @@ const Carousel = ({dataset}) => {
           </div>
         </div>
       </div>
-      <div className="indicators">
+      <div className="page_buttons">
         <button className="page_button" onClick={() => {
           updateIndex(activeIndex - 1);
         }}>
-          Prev 
+          <FaArrowLeft /> 
         </button>
-
+        <button className="page_button" onClick={() => {
+          updateIndex(activeIndex + 1);
+        }}>
+          <FaArrowRight /> 
+        </button>
+      </div>
+      <div className="indicators">
         {
           dataset.map((data, index) => {
             return (
@@ -100,17 +107,10 @@ const Carousel = ({dataset}) => {
                   updateIndex(index);
                 }}
               >
-                {index + 1}
               </button>
             );
           })
         }
-
-        <button className="page_button" onClick={() => {
-          updateIndex(activeIndex + 1);
-        }}>
-          Next 
-        </button>
       </div>
     </div>
   );
