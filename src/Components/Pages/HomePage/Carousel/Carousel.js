@@ -67,12 +67,21 @@ const Carousel = ({dataset}) => {
             );
           })
         }
-        <div
-          className="carousel-more"
-          width={`${100 / 3}%`}
-          onClick={() => console.log("More")}
-        >
-          更多內容
+        <div className="carousel-more_item">
+          <div
+            className="carousel-more_child"
+            width={`${100 / 3}%`}
+            onClick={() => console.log("More")}
+          >
+            <hr className="carousel-more_line"/>
+            <a href="https://google.com" target="_blank" rel="noreferrer">
+              <div className="carousel-more_info">
+                <p>點此查看</p>
+                <p>更多內容...</p>
+              </div>
+            </a>
+            <hr className="carousel-more_line"/>
+          </div>
         </div>
       </div>
       <div className="indicators">
