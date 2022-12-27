@@ -1,5 +1,5 @@
 
-import news from "../../Data/news.json";
+// import news from "../../Data/news.json";
 
 import NewsPage from "./NewsPage";
 import NewsPageSide from "./NewsPageSide";
