@@ -22,6 +22,17 @@
     word-wrap: break-word;
 }
 
+.news_page_clock{
+    transform: translateY(1rem) translateX(-0.5rem);
+    display: flex;
+    font-size: 12px;
+}
+
+.news_page_timer{
+    transform: translateY(-0.15rem) translateX(0.5rem);
+    font-size:6px;
+}
+
 /* 讓author, banner跟status可以並排 */
 .news_page_writerBlock{
     display:inline-block;

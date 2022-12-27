@@ -6,6 +6,7 @@
     "author":"炎龍",
     "status":"專欄作家",
     "banner":"/newsImage/firedragon.png",
+    "time":[2020,6,19,7,39],
     "id": 1
   },
   {
@@ -15,6 +16,7 @@
     "author":"蔡彥",
     "status":"菜鳥記者",
     "banner":"/newsImage/boss.png",
+    "time":[2022,11,30,22,1],
     "id": 2
   },
   {
@@ -24,6 +26,7 @@
     "author":"明政",
     "status":"資深記者",
     "banner":"/newsImage/pastBoss.png",
+    "time":[2022,12,27,20,15],
     "id": 3
   },
   {
@@ -33,6 +36,7 @@
     "author":"文哲",
     "status":"資深記者",
     "banner":"/newsImage/doc.png",
+    "time":[2017,1,1,5,0],
     "id": 4
   },
   {
@@ -42,6 +46,7 @@
     "author":"時中",
     "status":"專欄作家",
     "banner":"/newsImage/clock.png",
+    "time":[2021,8,16,12,10],
     "id": 5
   }
 ]
