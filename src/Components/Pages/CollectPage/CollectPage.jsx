@@ -1,20 +1,19 @@
 import React from 'react';
 import "./CollectPage.css"
-import { CollectPageData } from './CollectPageData';
 import { Link } from 'react-router-dom';
 import "../../Layout/Sidebar/Sidebar.css"
-import LogoNoBG from "../../../Assets/LogoNoBG.png"
+import NewsData from "../../../Components/Data/news.json"
 
 function CollectPage(){
     return(
         <div className="collect">
             <div className="gridBlock">
-                {CollectPageData.map((item,index) => {
+                {NewsData.map((item) => {
                     return (
-                        <Link style={{textDecoration: 'none'}} to = {item.path} className = "collectBlock">
+                        <Link style={{textDecoration: 'none'}} to = {`/news/${item.id}`} className = "collectBlock">
                             <div className="collectText">
                                 <span>{item.title}</span>
-								<img className="logo" src={LogoNoBG} alt={item.title} />
+								<img className="collect_img" src={item.img} alt={item.title} />
                             </div> 
                         </Link>
                     )

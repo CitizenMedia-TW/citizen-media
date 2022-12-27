@@ -11,22 +11,22 @@ import NotifyPage from "./Components/Pages/NotifyPage/NotifyPage";
 import SettingPage from "./Components/Pages/SettingPage/SettingPage";
 import DraftPage from "./Components/Pages/DraftPage/DraftPage";
 import CollectPage from "./Components/Pages/CollectPage/CollectPage";
-import NewsPage from "./Components/Pages/NewsPage/NewsPage";
+import NewsPageMain from "./Components/Pages/NewsPage/NewsPageMain";
 
 const App = () => {
   return (
     <Router>
         <Topbar />
         <Routes>
-          <Route exact path="/" element={ <HomePage /> } />
-          <Route exact path="/login" element={ <LoginPage /> } />
-          <Route exact path="/popular" element={ <PopularPage /> } />
-          {/* SideBar */}
-          <Route exact path="/notify" element={ <NotifyPage /> } />
-          <Route exact path="/setting" element={ <SettingPage /> } />
-          <Route exact path="/draft" element={ <DraftPage /> } />
-          <Route exact path="/collect" element={ <CollectPage /> } />
-          <Route exact path="/news/:id" element={ <NewsPage/> } />
+            <Route exact path="/" element={ <HomePage /> } />
+            <Route exact path="/login" element={ <LoginPage /> } />
+            <Route exact path="/popular" element={ <PopularPage /> } />
+            {/* SideBar */}
+            <Route exact path="/notify" element={ <NotifyPage /> } />
+            <Route exact path="/setting" element={ <SettingPage /> } />
+            <Route exact path="/draft" element={ <DraftPage /> } />
+            <Route exact path="/collect" element={ <CollectPage /> } />
+            <Route exact path="/news/:id" element={<NewsPageMain/>} />
         </Routes>
     </Router>
   );
