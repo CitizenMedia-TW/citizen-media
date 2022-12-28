@@ -1,4 +1,5 @@
 import React, {useState, useEffect} from "react";
+import {FaArrowLeft, FaArrowRight} from "react-icons/fa"
 
 import NewsBlock from "./NewsBlock.js";
 import "./Carousel.css";
@@ -67,21 +68,38 @@ const Carousel = ({dataset}) => {
             );
           })
         }
-        <div
-          className="carousel-more"
-          width={`${100 / 3}%`}
-          onClick={() => console.log("More")}
-        >
-          更多內容
+        <div className="carousel-more_item">
+          <div
+            className="carousel-more_child"
+            width={`${100 / 3}%`}
+            onClick={() => console.log("More")}
+          >
+            <hr className="carousel-more_line"/>
+            <a href="https://google.com" target="_blank" rel="noreferrer">
+              <div className="carousel-more_info">
+                <p>點此查看</p>
+                <p>更多內容...</p>
+              </div>
+            </a>
+            <hr className="carousel-more_line"/>
+          </div>
         </div>
       </div>
-      <div className="indicators">
-        <button className="page_button" onClick={() => {
+      <span className="arrow_button_container left_arrow_button_container">
+        <button className="arrow_button" onClick={() => {
           updateIndex(activeIndex - 1);
         }}>
-          Prev 
+          <FaArrowLeft /> 
         </button>
-
+      </span>
+      <span className="arrow_button_container right_arrow_button_container">
+        <button className="arrow_button" onClick={() => {
+          updateIndex(activeIndex + 1);
+        }}>
+          <FaArrowRight /> 
+        </button>
+      </span>
+      <div className="indicators">
         {
           dataset.map((data, index) => {
             return (
@@ -91,17 +109,10 @@ const Carousel = ({dataset}) => {
                   updateIndex(index);
                 }}
               >
-                {index + 1}
               </button>
             );
           })
         }
-
-        <button className="page_button" onClick={() => {
-          updateIndex(activeIndex + 1);
-        }}>
-          Next 
-        </button>
       </div>
     </div>
   );
