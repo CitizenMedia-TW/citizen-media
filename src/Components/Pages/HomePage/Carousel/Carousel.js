@@ -85,18 +85,20 @@ const Carousel = ({dataset}) => {
           </div>
         </div>
       </div>
-      <div className="page_buttons">
-        <button className="page_button" onClick={() => {
+      <span className="arrow_button_container left_arrow_button_container">
+        <button className="arrow_button" onClick={() => {
           updateIndex(activeIndex - 1);
         }}>
           <FaArrowLeft /> 
         </button>
-        <button className="page_button" onClick={() => {
+      </span>
+      <span className="arrow_button_container right_arrow_button_container">
+        <button className="arrow_button" onClick={() => {
           updateIndex(activeIndex + 1);
         }}>
           <FaArrowRight /> 
         </button>
-      </div>
+      </span>
       <div className="indicators">
         {
           dataset.map((data, index) => {

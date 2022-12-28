@@ -22,6 +22,7 @@
 .news_title {
   color: #000000;
   background-color: #d9d9d9;
+  border-radius: 10px;
   
   white-space: pre-wrap;
   font-family: "Noto Sans TC";
@@ -29,6 +30,12 @@
   font-weight: 700;
   line-height: 150%;
   letter-spacing: 0.1em;
+
+  white-space: pre-wrap;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
 
   margin: 2% 4%; 
 }
@@ -62,6 +69,7 @@
 
 .carousel {
   overflow: hidden;
+  position: relative;
 }
 
 .inner {
@@ -203,10 +211,37 @@
   color: #000000;
 }
 
-.page_button{
-  font-size: 50%;
+.arrow_button_container{
+  width: 1%;
+  position: absolute;
+
+  
+
+  bottom: 48%;
+}
+
+.left_arrow_button_container{
+  left: 33%;
+}
+
+.right_arrow_button_container{
+  left: 67%;
+}
+
+.arrow_button{
+  font-size: 100%;
   letter-spacing: 0.05em;
 
   border-radius: 5px;
   border-color: rgba(0, 0, 0, 0.0);
+
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 4%;
+  padding-bottom: 0.05%;
+}
+
+.arrow_button:hover {
+  background-color: #000000;
+  color: #ffffff;
 }
