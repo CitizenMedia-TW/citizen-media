@@ -4,10 +4,14 @@ import AuthService from "../../../services/auth.service";
 
 const LoginPage = ({ currentUser, setCurrentUser }) => {
   const navigate = useNavigate();
+  let [username, setUsername] = useState("");
   let [email, setEmail] = useState("");
   let [password, setPassword] = useState("");
   let [message, setMessage] = useState("");
 
+  const handleUsername = (e) => {
+    setUsername(e.target.value);
+  };
   const handleEmail = (e) => {
     setEmail(e.target.value);
   };
@@ -27,10 +31,31 @@ const LoginPage = ({ currentUser, setCurrentUser }) => {
     }
   };
 
+  const handleRegister = async () => {
+    try {
+      AuthService.register(username, email, password);
+      window.alert("Register succeed, you can login now");
+      navigate("/login");
+    } catch (e) {
+      setMessage(e.response.data);
+    }
+  };
+
   return (
     <div>
       <div>
         {message && <div className="alert alert-danger">{message}</div>}
+        <div>
+          <label htmlFor="username">Username: </label>
+          <input
+            onChange={handleUsername}
+            type="text"
+            className="form-control"
+            name="username"
+            placeholder="For register only"
+          />
+        </div>
+        <br />
         <div>
           <label htmlFor="username">Email: </label>
           <input
@@ -54,6 +79,9 @@ const LoginPage = ({ currentUser, setCurrentUser }) => {
         <div>
           <button onClick={handleLogin}>
             <span>Login</span>
+          </button>
+          <button onClick={handleRegister}>
+            <span>Register</span>
           </button>
         </div>
       </div>
