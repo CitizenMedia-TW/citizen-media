@@ -102,7 +102,7 @@ const MenuBar = ({ editor }) => {
 };
 
 const DraftPage = ({ currentUser }) => {
-  const nagivate = useNavigate();
+  const navigate = useNavigate();
   const [title, setTitle] = useState("");
   const [description, setDescription] = useState("");
   const [story, setStory] = useState("");
@@ -118,7 +118,7 @@ const DraftPage = ({ currentUser }) => {
     try {
       StoryService.newStory(title, story, description);
       window.alert("Post succeed");
-      nagivate("/");
+      navigate("/");
     } catch (e) {
       setMessage(e.response.data);
     }
