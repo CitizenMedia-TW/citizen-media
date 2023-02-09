@@ -36,7 +36,11 @@ const App = () => {
         {/* SideBar */}
         <Route exact path="/notify" element={<NotifyPage />} />
         <Route exact path="/setting" element={<SettingPage />} />
-        <Route exact path="/draft" element={<DraftPage />} />
+        <Route
+          exact
+          path="/draft"
+          element={<DraftPage currentUser={currentUser} />}
+        />
         <Route exact path="/collect" element={<CollectPage />} />
         <Route exact path="/news/:id" element={<NewsPageMain />} />
       </Routes>
