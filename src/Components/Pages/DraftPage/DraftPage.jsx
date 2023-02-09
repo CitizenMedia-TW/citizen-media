@@ -101,7 +101,7 @@ const MenuBar = ({ editor }) => {
   );
 };
 
-function DraftPage(currentUser) {
+const DraftPage = ({ currentUser }) => {
   const nagivate = useNavigate();
   const [title, setTitle] = useState("");
   const [description, setDescription] = useState("");
@@ -148,6 +148,6 @@ function DraftPage(currentUser) {
       )}
     </div>
   );
-}
+};
 
 export default DraftPage;
