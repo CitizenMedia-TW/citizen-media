@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import AuthService from "../../../services/auth.service";
 
 const LoginPage = ({ currentUser, setCurrentUser }) => {
-  const nagivate = useNavigate();
+  const navigate = useNavigate();
   let [email, setEmail] = useState("");
   let [password, setPassword] = useState("");
   let [message, setMessage] = useState("");
@@ -21,7 +21,7 @@ const LoginPage = ({ currentUser, setCurrentUser }) => {
       localStorage.setItem("user", JSON.stringify(response.data));
       window.alert("Login succeed");
       setCurrentUser(AuthService.getCurrentUser());
-      nagivate("/");
+      navigate("/");
     } catch (e) {
       setMessage(e.response.data);
     }
