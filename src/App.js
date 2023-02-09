@@ -19,7 +19,7 @@ const App = () => {
   let [currentUser, setCurrentUser] = useState(AuthService.getCurrentUser());
   return (
     <Router>
-      <Topbar />
+      <Topbar currentUser={currentUser} setCurrentUser={setCurrentUser} />
       <Routes>
         <Route exact path="/" element={<HomePage />} />
         <Route
