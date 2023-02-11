@@ -116,8 +116,8 @@ const DraftPage = ({ currentUser }) => {
   };
   const handlePost = async () => {
     try {
-      StoryService.newStory(title, story, description);
-      window.alert("Post succeed");
+      let response = await StoryService.newStory(title, story, description);
+      window.alert(response.data.message);
       navigate("/");
     } catch (e) {
       setMessage(e.response.data);
