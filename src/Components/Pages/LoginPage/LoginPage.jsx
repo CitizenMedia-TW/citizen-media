@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import AuthService from "../../../services/auth.service";
+import "./LoginPage.css";
 
 const LoginPage = ({ currentUser, setCurrentUser }) => {
   const navigate = useNavigate();
@@ -42,11 +43,11 @@ const LoginPage = ({ currentUser, setCurrentUser }) => {
   };
 
   return (
-    <div>
+    <div className="loginBox">
       <div>
         {message && <div className="alert alert-danger">{message}</div>}
         <div>
-          <label htmlFor="username">Username: </label>
+          <label htmlFor="username">Username </label>
           <input
             onChange={handleUsername}
             type="text"
@@ -57,7 +58,7 @@ const LoginPage = ({ currentUser, setCurrentUser }) => {
         </div>
         <br />
         <div>
-          <label htmlFor="username">Email: </label>
+          <label htmlFor="username">Email </label>
           <input
             onChange={handleEmail}
             type="text"
@@ -67,7 +68,7 @@ const LoginPage = ({ currentUser, setCurrentUser }) => {
         </div>
         <br />
         <div>
-          <label htmlFor="password">Password: </label>
+          <label htmlFor="password">Password </label>
           <input
             onChange={handlePassword}
             type="password"
@@ -77,10 +78,10 @@ const LoginPage = ({ currentUser, setCurrentUser }) => {
         </div>
         <br />
         <div>
-          <button onClick={handleLogin}>
+          <button className="loginBtn" onClick={handleLogin}>
             <span>Login</span>
           </button>
-          <button onClick={handleRegister}>
+          <button className="loginBtn" onClick={handleRegister}>
             <span>Register</span>
           </button>
         </div>
