@@ -1,30 +1,30 @@
-import { React } from 'react'
-import * as FaIcons from 'react-icons/fa'
-import * as AiIcons from 'react-icons/ai'
+import { React } from "react";
+import * as FaIcons from "react-icons/fa";
+import * as AiIcons from "react-icons/ai";
 
 export const SidebarData = [
   {
-    title: '收藏',
-    path: '/collect',
+    title: "收藏",
+    path: "/collect",
     icons: <FaIcons.FaBookmark />,
-    cName: 'nav-text',
+    cName: "nav-text",
   },
   {
-    title: '通知',
-    path: '/notify',
+    title: "通知",
+    path: "/notify",
     icons: <FaIcons.FaBell />,
-    cName: 'nav-text',
+    cName: "nav-text",
   },
   {
-    title: '我的文章',
-    path: '/draft',
+    title: "我的文章",
+    path: "/stories/my-stories",
     icons: <FaIcons.FaFile />,
-    cName: 'nav-text',
+    cName: "nav-text",
   },
   {
-    title: '設定',
-    path: '/setting',
+    title: "設定",
+    path: "/setting",
     icons: <AiIcons.AiTwotoneSetting />,
-    cName: 'nav-text',
+    cName: "nav-text",
   },
-]
+];

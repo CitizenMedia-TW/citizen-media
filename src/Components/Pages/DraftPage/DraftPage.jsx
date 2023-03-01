@@ -102,7 +102,7 @@ const MenuBar = ({ editor }) => {
 };
 
 const DraftPage = ({ currentUser }) => {
-  const nagivate = useNavigate();
+  const navigate = useNavigate();
   const [title, setTitle] = useState("");
   const [description, setDescription] = useState("");
   const [story, setStory] = useState("");
@@ -116,9 +116,9 @@ const DraftPage = ({ currentUser }) => {
   };
   const handlePost = async () => {
     try {
-      StoryService.newStory(title, story, description);
-      window.alert("Post succeed");
-      nagivate("/");
+      let response = await StoryService.newStory(title, story, description);
+      window.alert(response.data.message);
+      navigate("/");
     } catch (e) {
       setMessage(e.response.data);
     }

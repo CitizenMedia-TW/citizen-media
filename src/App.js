@@ -12,6 +12,7 @@ import SettingPage from "./Components/Pages/SettingPage/SettingPage";
 import DraftPage from "./Components/Pages/DraftPage/DraftPage";
 import CollectPage from "./Components/Pages/CollectPage/CollectPage";
 import NewsPageMain from "./Components/Pages/NewsPage/NewsPageMain";
+import MyStoriesPage from "./Components/Pages/MyStoriesPage/MyStoriesPage";
 
 import AuthService from "./services/auth.service";
 
@@ -38,8 +39,13 @@ const App = () => {
         <Route exact path="/setting" element={<SettingPage />} />
         <Route
           exact
-          path="/draft"
+          path="/stories/draft"
           element={<DraftPage currentUser={currentUser} />}
+        />
+        <Route
+          exact
+          path="/stories/my-stories"
+          element={<MyStoriesPage currentUser={currentUser} />}
         />
         <Route exact path="/collect" element={<CollectPage />} />
         <Route exact path="/news/:id" element={<NewsPageMain />} />
