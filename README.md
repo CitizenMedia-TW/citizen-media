@@ -1,3 +1,20 @@
+# Environment setup
+
+This project is formatted by [prettier](https://prettier.io/).
+
+Although prettier itself can be installed via `npm install --save-dev`, integration with IDEs must be done by yourself.
+
+For [`coc.nvim`](https://github.com/neoclide/coc.nvim) in Vim, you can setup `.vim/coc-settings.json` in project root:
+
+```json
+{
+  "coc.preferences.formatOnSave": true,
+  "coc.preferences.formatOnType": true,
+  "volar.disableFormatting": true,
+  "prettier.enable": true
+}
+```
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

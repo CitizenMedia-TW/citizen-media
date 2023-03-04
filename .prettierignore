@@ -24,3 +24,8 @@ yarn-error.log*
 /.vim/coc-settings.json
 
 .vscode
+
+# copy of .gitignore end
+# Ignore artifacts:
+build
+coverage
