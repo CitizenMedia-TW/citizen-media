@@ -1,6 +1,0 @@
-{
-  "coc.preferences.formatOnSave": true,
-  "coc.preferences.formatOnType": true,
-  "volar.disableFormatting": true,
-  "prettier.enable": true
-}
