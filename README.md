@@ -4,16 +4,7 @@ This project is formatted by [prettier](https://prettier.io/).
 
 Although prettier itself can be installed via `npm install --save-dev`, integration with IDEs must be done by yourself.
 
-## Setup [`coc.nvim`](https://github.com/neoclide/coc.nvim) in Vim
-
-For [`coc.nvim`](https://github.com/neoclide/coc.nvim) in Vim, you can setup as followings:
-
-1. Do one of these:
-
-- Append `@yaegassy/coc-tailwindcss3` to variable `g:coc_global_extensions` in `.vimrc`
-- Execute ex command by typing `:CocInstall @yaegassy/coc-tailwindcss3` in normal mode
-
-2. Put the followings into `.vim/coc-settings.json` in project root:
+For [`coc.nvim`](https://github.com/neoclide/coc.nvim) in Vim, you can setup `.vim/coc-settings.json` in project root:
 
 ```json
 {
