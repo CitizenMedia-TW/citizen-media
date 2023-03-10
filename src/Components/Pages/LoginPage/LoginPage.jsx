@@ -34,11 +34,11 @@ const LoginPage = ({ currentUser, setCurrentUser }) => {
 
   const handleRegister = async () => {
     try {
-      AuthService.register(username, email, password);
+      await AuthService.register(username, email, password);
       window.alert("Register succeed, you can login now");
       navigate("/login");
-    } catch (e) {
-      setMessage(e.response.data);
+    } catch (err) {
+      window.alert(err.response.data);
     }
   };
 

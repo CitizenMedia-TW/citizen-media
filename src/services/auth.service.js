@@ -15,6 +15,9 @@ class AuthService {
       username,
       email,
       password,
+    })
+    .catch((err) => {
+      throw err;
     });
   }
 
