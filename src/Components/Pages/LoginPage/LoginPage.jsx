@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 import AuthService from "../../../services/auth.service";
 import "./LoginPage.css";
 
+
 const LoginPage = ({ currentUser, setCurrentUser }) => {
   const navigate = useNavigate();
   let [username, setUsername] = useState("");
@@ -43,47 +44,59 @@ const LoginPage = ({ currentUser, setCurrentUser }) => {
   };
 
   return (
-    <div className="loginBox">
-      <div>
-        {message && <div className="alert alert-danger">{message}</div>}
+    <div className="flex justify-center mt-16">
+      <div className="py-8 px-12 rounded-md border-2 border-sky-700">
+        <div className="font-mono mb-6 text-3xl text-sky-900">
+          REGISTER
+        </div>
+        {/* {message && <div className="alert alert-danger">{message}</div>} */}
+        {message && <div className="">{message}</div>}
         <div>
-          <label htmlFor="username">Username </label>
+          <label htmlFor="username"></label>
           <input
             onChange={handleUsername}
             type="text"
-            className="form-control"
+            // className="form-control"
+            className="py-1 px-4 rounded-md border-2 border-sky-700"
             name="username"
-            placeholder="For register only"
+            placeholder="Username"
           />
         </div>
         <br />
         <div>
-          <label htmlFor="username">Email </label>
+          <label htmlFor="username"></label>
           <input
             onChange={handleEmail}
             type="text"
-            className="form-control"
+            // className="form-control"
+            className="py-1 px-4 rounded-md border-2 border-sky-700"
             name="email"
+            placeholder="Email"
           />
         </div>
         <br />
         <div>
-          <label htmlFor="password">Password </label>
+          <label htmlFor="password"></label>
           <input
             onChange={handlePassword}
             type="password"
-            className="form-control"
+            // className="form-control"
+            className="py-1 px-4 rounded-md border-2 border-sky-700"
             name="password"
+            placeholder="Password"
           />
         </div>
         <br />
-        <div>
-          <button className="loginBtn" onClick={handleLogin}>
-            <span>Login</span>
+        <div className="grid justify-items-center">
+          <button className="hover:bg-yellow-500 px-8 py-2 mb-4 justify-center flex rounded-md bg-yellow-300" onClick={handleRegister}>
+          Sign Up
           </button>
-          <button className="loginBtn" onClick={handleRegister}>
-            <span>Register</span>
+          {/* <button className="loginBtn" onClick={handleLogin}> */}
+          <button className="hover:text-sky-700 underline underline-offset-1 text-sky-900" onClick={handleLogin}>
+          Login
           </button>
+          {/* <button className="loginBtn" onClick={handleRegister}> */}
+          
         </div>
       </div>
     </div>
