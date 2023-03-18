@@ -60,7 +60,7 @@ const LoginPage = ({ currentUser, setCurrentUser }) => {
             // className="form-control"
             className="py-1 px-4 rounded-md border-2 border-sky-700"
             name="username"
-            placeholder="Username"
+            placeholder="👤 Username"
           />
         </div>
         <br />
@@ -72,7 +72,7 @@ const LoginPage = ({ currentUser, setCurrentUser }) => {
             // className="form-control"
             className="py-1 px-4 rounded-md border-2 border-sky-700"
             name="email"
-            placeholder="Email"
+            placeholder="✉️ Email"
           />
         </div>
         <br />
@@ -84,7 +84,7 @@ const LoginPage = ({ currentUser, setCurrentUser }) => {
             // className="form-control"
             className="py-1 px-4 rounded-md border-2 border-sky-700"
             name="password"
-            placeholder="Password"
+            placeholder="🔒 Password"
           />
         </div>
         <br />
