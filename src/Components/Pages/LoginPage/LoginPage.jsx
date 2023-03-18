@@ -1,8 +1,6 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import AuthService from "../../../services/auth.service";
-// import "./LoginPage.css";
-
 
 const LoginPage = ({ currentUser, setCurrentUser }) => {
   const navigate = useNavigate();
@@ -47,7 +45,10 @@ const LoginPage = ({ currentUser, setCurrentUser }) => {
     <div className="flex justify-center mt-16">
       <div className="py-8 px-12 rounded-md border-2 border-sky-700">
         <div className="font-mono mb-6 text-3xl text-sky-900">
-          REGISTER
+          <h1>
+            <span class="shadow-[inset_0_-14px_0_#facc15]">&nbsp;REGI</span>
+            STER
+          </h1>
         </div>
         {/* {message && <div className="alert alert-danger">{message}</div>} */}
         {message && <div className="">{message}</div>}
@@ -88,15 +89,20 @@ const LoginPage = ({ currentUser, setCurrentUser }) => {
         </div>
         <br />
         <div className="grid justify-items-center">
-          <button className="hover:bg-yellow-500 px-8 py-2 mb-4 justify-center flex rounded-md bg-yellow-300" onClick={handleRegister}>
-          Sign Up
+          <button
+            className="hover:bg-yellow-500 px-8 py-2 mb-4 justify-center flex rounded-md bg-yellow-300"
+            onClick={handleRegister}
+          >
+            Sign Up
           </button>
           {/* <button className="loginBtn" onClick={handleLogin}> */}
-          <button className="hover:text-sky-700 underline underline-offset-1 text-sky-900" onClick={handleLogin}>
-          Login
+          <button
+            className="hover:text-sky-700 underline underline-offset-1 text-sky-900"
+            onClick={handleLogin}
+          >
+            Login
           </button>
           {/* <button className="loginBtn" onClick={handleRegister}> */}
-          
         </div>
       </div>
     </div>
