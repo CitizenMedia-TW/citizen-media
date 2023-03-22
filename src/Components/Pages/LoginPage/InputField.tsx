@@ -1,6 +1,8 @@
 import React from "react";
+import { IconType, IconContext } from "react-icons/lib";
 
 interface Props {
+  img: IconType;
   placeholder: string;
   onChange: (e: React.ChangeEvent) => void;
   type?: string;
@@ -15,6 +17,9 @@ export default function InputField(props: Props) {
         (props.className ? props.className : "")
       }
     >
+      <IconContext.Provider value={{ color: "#646464", size: "22px" }}>
+        <props.img />
+      </IconContext.Provider>
       <input
         placeholder={props.placeholder}
         onChange={props.onChange}

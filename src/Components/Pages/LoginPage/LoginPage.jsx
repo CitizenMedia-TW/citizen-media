@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import AuthService from "../../../services/auth.service";
+import { MdPeople, MdMail, MdLock } from "react-icons/md";
+
 import InputField from "./InputField.tsx";
 
 const LoginPage = ({ currentUser, setCurrentUser }) => {
@@ -53,11 +55,13 @@ const LoginPage = ({ currentUser, setCurrentUser }) => {
         </div>
         {message && <div>{message}</div>}
         <InputField
+          img={MdPeople}
           placeholder={"Username"}
           onChange={handleUsername}
         />
-        <InputField placeholder={"Email"} onChange={handleEmail} />
+        <InputField img={MdMail} placeholder={"Email"} onChange={handleEmail} />
         <InputField
+          img={MdLock}
           placeholder={"Password"}
           onChange={handlePassword}
           type={"password"}
