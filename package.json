@@ -45,8 +45,9 @@
     ]
   },
   "devDependencies": {
+    "@neojp/tailwindcss-line-clamp-utilities": "^1.0.1",
     "prettier": "2.8.4",
-    "tailwindcss": "^3.2.4"
+    "tailwindcss": "^3.2.7"
   },
   "prettier": {
     "singleQuote": false,
