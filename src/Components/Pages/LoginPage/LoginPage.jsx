@@ -50,14 +50,12 @@ const LoginPage = ({ currentUser, setCurrentUser }) => {
             STER
           </h1>
         </div>
-        {/* {message && <div className="alert alert-danger">{message}</div>} */}
-        {message && <div className="">{message}</div>}
+        {message && <div>{message}</div>}
         <div>
           <label htmlFor="username"></label>
           <input
             onChange={handleUsername}
             type="text"
-            // className="form-control"
             className="py-1 px-4 rounded-md border-2 border-sky-700"
             name="username"
             placeholder="👤 Username"
@@ -69,7 +67,6 @@ const LoginPage = ({ currentUser, setCurrentUser }) => {
           <input
             onChange={handleEmail}
             type="text"
-            // className="form-control"
             className="py-1 px-4 rounded-md border-2 border-sky-700"
             name="email"
             placeholder="✉️ Email"
@@ -81,7 +78,6 @@ const LoginPage = ({ currentUser, setCurrentUser }) => {
           <input
             onChange={handlePassword}
             type="password"
-            // className="form-control"
             className="py-1 px-4 rounded-md border-2 border-sky-700"
             name="password"
             placeholder="🔒 Password"
@@ -95,14 +91,12 @@ const LoginPage = ({ currentUser, setCurrentUser }) => {
           >
             Sign Up
           </button>
-          {/* <button className="loginBtn" onClick={handleLogin}> */}
           <button
             className="hover:text-sky-700 underline underline-offset-1 text-sky-900"
             onClick={handleLogin}
           >
             Login
           </button>
-          {/* <button className="loginBtn" onClick={handleRegister}> */}
         </div>
       </div>
     </div>
