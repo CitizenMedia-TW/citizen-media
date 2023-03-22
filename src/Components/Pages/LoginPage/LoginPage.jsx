@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import AuthService from "../../../services/auth.service";
+import InputField from "./InputField.tsx";
 
 const LoginPage = ({ currentUser, setCurrentUser }) => {
   const navigate = useNavigate();
@@ -51,39 +52,16 @@ const LoginPage = ({ currentUser, setCurrentUser }) => {
           </h1>
         </div>
         {message && <div>{message}</div>}
-        <div>
-          <label htmlFor="username"></label>
-          <input
-            onChange={handleUsername}
-            type="text"
-            className="py-1 px-4 rounded-md border-2 border-sky-700"
-            name="username"
-            placeholder="👤 Username"
-          />
-        </div>
-        <br />
-        <div>
-          <label htmlFor="username"></label>
-          <input
-            onChange={handleEmail}
-            type="text"
-            className="py-1 px-4 rounded-md border-2 border-sky-700"
-            name="email"
-            placeholder="✉️ Email"
-          />
-        </div>
-        <br />
-        <div>
-          <label htmlFor="password"></label>
-          <input
-            onChange={handlePassword}
-            type="password"
-            className="py-1 px-4 rounded-md border-2 border-sky-700"
-            name="password"
-            placeholder="🔒 Password"
-          />
-        </div>
-        <br />
+        <InputField
+          placeholder={"Username"}
+          onChange={handleUsername}
+        />
+        <InputField placeholder={"Email"} onChange={handleEmail} />
+        <InputField
+          placeholder={"Password"}
+          onChange={handlePassword}
+          type={"password"}
+        />
         <div className="grid justify-items-center">
           <button
             className="hover:bg-yellow-500 px-8 py-2 mb-4 justify-center flex rounded-md bg-yellow-300"
