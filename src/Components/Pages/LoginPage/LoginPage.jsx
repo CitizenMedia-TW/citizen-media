@@ -1,7 +1,9 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import AuthService from "../../../services/auth.service";
-import "./LoginPage.css";
+import { MdPeople, MdMail, MdLock } from "react-icons/md";
+
+import InputField from "./InputField.tsx";
 
 const LoginPage = ({ currentUser, setCurrentUser }) => {
   const navigate = useNavigate();
@@ -43,46 +45,39 @@ const LoginPage = ({ currentUser, setCurrentUser }) => {
   };
 
   return (
-    <div className="loginBox">
-      <div>
-        {message && <div className="alert alert-danger">{message}</div>}
-        <div>
-          <label htmlFor="username">Username </label>
-          <input
-            onChange={handleUsername}
-            type="text"
-            className="form-control"
-            name="username"
-            placeholder="For register only"
-          />
+    <div className="flex justify-center mt-16">
+      <div className="py-8 px-12 rounded-md border-2 border-sky-700">
+        <div className="font-mono mb-6 text-3xl text-sky-900">
+          <h1>
+            <span class="shadow-[inset_0_-14px_0_#facc15]">&nbsp;REGI</span>
+            STER
+          </h1>
         </div>
-        <br />
-        <div>
-          <label htmlFor="username">Email </label>
-          <input
-            onChange={handleEmail}
-            type="text"
-            className="form-control"
-            name="email"
-          />
-        </div>
-        <br />
-        <div>
-          <label htmlFor="password">Password </label>
-          <input
-            onChange={handlePassword}
-            type="password"
-            className="form-control"
-            name="password"
-          />
-        </div>
-        <br />
-        <div>
-          <button className="loginBtn" onClick={handleLogin}>
-            <span>Login</span>
+        {message && <div>{message}</div>}
+        <InputField
+          img={MdPeople}
+          placeholder={"Username"}
+          onChange={handleUsername}
+        />
+        <InputField img={MdMail} placeholder={"Email"} onChange={handleEmail} />
+        <InputField
+          img={MdLock}
+          placeholder={"Password"}
+          onChange={handlePassword}
+          type={"password"}
+        />
+        <div className="grid justify-items-center">
+          <button
+            className="hover:bg-yellow-500 px-8 py-2 mb-4 justify-center flex rounded-md bg-yellow-300"
+            onClick={handleRegister}
+          >
+            Sign Up
           </button>
-          <button className="loginBtn" onClick={handleRegister}>
-            <span>Register</span>
+          <button
+            className="hover:text-sky-700 underline underline-offset-1 text-sky-900"
+            onClick={handleLogin}
+          >
+            Login
           </button>
         </div>
       </div>
