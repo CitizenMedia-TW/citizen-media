@@ -53,10 +53,10 @@ const Footer = () => {
         
         
         <div className='ml-10 mt-32 scale-75 inline-flex items-center'>
-            <a href='https://www.google.com/'><img className='' src={Facebook_1} alt='facebook' /></a>
-            <a href='https://www.google.com/'><img className='' src={Facebook_1} alt='facebook' /></a>
-            <a href='https://www.google.com/'><img className='' src={Facebook_1} alt='facebook' /></a>
-            <a href='https://www.google.com/'><img className='' src={Facebook_1} alt='facebook' /></a>
+            <a className='' href='https://www.google.com/'><img className='' src={Facebook_1} alt='facebook' /></a>
+            <a className='ml-4' href='https://www.google.com/'><img className='' src={Facebook_1} alt='facebook' /></a>
+            <a className='ml-4' href='https://www.google.com/'><img className='' src={Facebook_1} alt='facebook' /></a>
+            <a className='ml-4' href='https://www.google.com/'><img className='' src={Facebook_1} alt='facebook' /></a>
             
         </div>
     </div>
