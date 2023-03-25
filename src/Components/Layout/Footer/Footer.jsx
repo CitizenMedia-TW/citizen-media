@@ -24,7 +24,7 @@ const Footer = () =>{
                     Commodo malesuada id est urna et.
                 </p>
             </div>
-            <div class="ml-12 h-32 text-white justify-center">
+            <div class="ml-7 h-32 text-white justify-center">
                 <div class="font-bold uppercase pb-1">about</div>  {/*為何span不行==*/}
                 <div class="w-16 h-2 border-t-2 border-r-white"></div>
                 <div class="">
@@ -35,7 +35,7 @@ const Footer = () =>{
                     </ul>
                 </div>
             </div>
-            <div class="ml-16 mr-10 h-32 text-white justify-center">
+            <div class="ml-12 mr-2 h-32  text-white justify-center">
                 <div class="font-bold uppercase pb-1">support</div>  
                 <div class="w-20 h-2 border-t-2 border-r-white"></div>
                 <div>
@@ -45,7 +45,7 @@ const Footer = () =>{
                     </ul>
                 </div>
             </div>
-            <div class="relative top-16 inline-flex ">
+            <div class="relative top-16 ml-3 inline-flex ">
                 <div>
                         <a href="#"><img src={FaceBook_2}></img></a>
                 </div>
