@@ -32,10 +32,10 @@ const LoginPage = ({ currentUser, setCurrentUser }) => {
     }
   };
 
-  const handleRegister = async () => {
+  const handleSignup = async () => {
     try {
-      await AuthService.register(username, email, password);
-      window.alert("Register succeed, you can login now");
+      await AuthService.signup(username, email, password);
+      window.alert("Signup succeed, you can login now");
       navigate("/login");
     } catch (err) {
       window.alert(err.response.data);
@@ -81,8 +81,8 @@ const LoginPage = ({ currentUser, setCurrentUser }) => {
           <button className="loginBtn" onClick={handleLogin}>
             <span>Login</span>
           </button>
-          <button className="loginBtn" onClick={handleRegister}>
-            <span>Register</span>
+          <button className="loginBtn" onClick={handleSignup}>
+            <span>Signup</span>
           </button>
         </div>
       </div>
