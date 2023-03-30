@@ -34,10 +34,10 @@ const LoginPage = ({ currentUser, setCurrentUser }) => {
     }
   };
 
-  const handleRegister = async () => {
+  const handleSignup = async () => {
     try {
-      await AuthService.register(username, email, password);
-      window.alert("Register succeed, you can login now");
+      await AuthService.signup(username, email, password);
+      window.alert("Signup succeed, you can login now");
       navigate("/login");
     } catch (err) {
       window.alert(err.response.data);
@@ -69,11 +69,10 @@ const LoginPage = ({ currentUser, setCurrentUser }) => {
         <div className="grid justify-items-center">
           <button
             className="hover:bg-yellow-500 px-8 py-2 mb-4 justify-center flex rounded-md bg-yellow-300"
-            onClick={handleRegister}
+            onClick={handleSignup}
           >
             Sign Up
           </button>
-          <button
             className="hover:text-sky-700 underline underline-offset-1 text-sky-900"
             onClick={handleLogin}
           >
