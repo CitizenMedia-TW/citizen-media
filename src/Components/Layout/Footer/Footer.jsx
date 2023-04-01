@@ -1,10 +1,7 @@
 
 import React from 'react'
 import Logo from "../../../Assets/NewLogo.png"
-import FaceBook_1 from "../../../Assets/facebook_2.png"
-import FaceBook_2 from "../../../Assets/facebook_1.png"
-import IG from "../../../Assets/instagram.png"
-import Home from "../../../Assets/home.png"
+import { FiFacebook, FiHome, FiInstagram } from "react-icons/fi";
 
 
 const Footer = () =>{
@@ -46,18 +43,9 @@ const Footer = () =>{
                 </div>
             </div>
             <div class="relative top-16 ml-3 inline-flex ">
-                <div>
-                        <a href="#"><img src={FaceBook_2}></img></a>
-                </div>
-                <div class="relative left-4">
-                        <a href="#"><img src={FaceBook_1}></img></a>
-                </div>
-                <div class="relative left-8">
-                        <a href="#"><img src={IG}></img></a>
-                </div>
-                <div class="relative left-12">
-                        <a href="#"><img src={Home}></img></a>
-                </div>
+                <FiFacebook class="text-white mx-2 my-2 w-8 h-8" />
+                <FiInstagram class="text-white mx-2 my-2 w-8 h-8" />
+                <FiHome class="text-white mx-2 my-2 w-8 h-8 "/>
             </div>
         </div>  
     );
