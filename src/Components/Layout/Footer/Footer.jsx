@@ -6,7 +6,7 @@ import { FiFacebook, FiHome, FiInstagram } from "react-icons/fi";
 
 const Footer = () =>{
     return (
-        <div class="flex w-max h-52 bg-[#133157] items-center">
+        <div class="sm:flex  w-full h-52 bg-[#133157] items-center">
             <div class="ml-20">
                 <img src={Logo} alt="here was a logo:("></img>
             </div>
@@ -43,9 +43,9 @@ const Footer = () =>{
                 </div>
             </div>
             <div class="relative top-16 ml-3 inline-flex ">
-                <FiFacebook class="text-white mx-2 my-2 w-8 h-8" />
-                <FiInstagram class="text-white mx-2 my-2 w-8 h-8" />
-                <FiHome class="text-white mx-2 my-2 w-8 h-8 "/>
+                <FiFacebook class="text-white mx-1 my-1 w-8 h-8" />
+                <FiInstagram class="text-white mx-1 my-1 w-8 h-8" />
+                <FiHome class="text-white mx-1 my-1 w-8 h-8 "/>
             </div>
         </div>  
     );
