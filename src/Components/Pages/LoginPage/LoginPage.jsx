@@ -73,6 +73,7 @@ const LoginPage = ({ currentUser, setCurrentUser }) => {
           >
             Sign Up
           </button>
+          <button
             className="hover:text-sky-700 underline underline-offset-1 text-sky-900"
             onClick={handleLogin}
           >
