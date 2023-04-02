@@ -9,7 +9,7 @@ import Facebook_2 from '../../../Assets/Facebook_2.png'
 
 const Footer = () => {
     return (
-    <div className='w-full h-64 inline-flex items-center bg-footer text-white'>
+    <footer className='w-full h-64 inline-flex items-center bg-footer text-white'>
         <img className='w-1/5 ml-16' src={Logo} alt="logo" />
         
         <div className='
@@ -59,7 +59,7 @@ const Footer = () => {
             <a className='ml-4' href='https://www.google.com/'><img className='' src={Facebook_1} alt='facebook' /></a>
             
         </div>
-    </div>
+    </footer>
     )
 }
 
