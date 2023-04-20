@@ -33,25 +33,23 @@ export default function TopbarMain(
   setCurrentUser: React.Dispatch<any>
 ) {
   return (
-    <div className="sticky top-0 w-full px-14 py-5 bg-white">
-      <div className="flex flex-row">
-        <img src={LogoNoBG} className="h-20 mr-12" />
-        <div className="shrink flex flex-row justify-between items-end overflow-auto">
-          {categories.map((cate) => {
-            return (
-              <span className="first:ml-0 last:mr-0 mx-3 text-xl">{cate}</span>
-            );
-          })}
-        </div>
-        <span className="grow" />
-        <span className="shrink-0 flex flex-row items-end pb-0.5">
-          <IconContext.Provider value={{ size: "20px" }}>
-            <FaSearch />
-            <span className="w-9" />
-            <AiOutlineMenu />
-          </IconContext.Provider>
-        </span>
+    <div className="sticky top-0 w-full px-14 py-5 bg-white flex flex-row">
+      <img src={LogoNoBG} className="h-20 mr-12" />
+      <div className="shrink flex flex-row justify-between items-end overflow-auto">
+        {categories.map((cate) => {
+          return (
+            <span className="first:ml-0 last:mr-0 mx-3 text-xl">{cate}</span>
+          );
+        })}
       </div>
+      <span className="grow" />
+      <span className="shrink-0 flex flex-row items-end pb-0.5">
+        <IconContext.Provider value={{ size: "20px" }}>
+          <FaSearch />
+          <span className="w-9" />
+          <AiOutlineMenu />
+        </IconContext.Provider>
+      </span>
     </div>
   );
 }
