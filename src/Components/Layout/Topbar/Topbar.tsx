@@ -1,11 +1,11 @@
 import React from "react";
-import LogoNoBG from "../../../Assets/LogoNoBG.png";
 import { Link } from "react-router-dom";
-import Sidebar from "../Sidebar/Sidebar";
 import { FaSearch } from "react-icons/fa";
-import { AiOutlineMenu } from "react-icons/ai";
+import { AiOutlineMenu, AiOutlineDown } from "react-icons/ai";
 import { IconContext } from "react-icons/lib";
 
+import LogoNoBG from "../../../Assets/LogoNoBG.png";
+import Sidebar from "../Sidebar/Sidebar";
 import AuthService from "../../../services/auth.service";
 
 const categories = [
@@ -47,6 +47,21 @@ export default function TopbarMain(
         <IconContext.Provider value={{ size: "20px" }}>
           <FaSearch />
           <span className="w-9" />
+          <AiOutlineMenu />
+        </IconContext.Provider>
+      </span>
+    </div>
+  );
+}
+
+export function Topbar(currentUser: any, setCurrentUser: React.Dispatch<any>) {
+  return (
+    <div className="sticky top-0 w-full px-10 py-2 flex flex-row justify-between">
+      <img src={LogoNoBG} className="h-12" />
+      <span className="shrink-0 flex flex-row items-center pb-0.5">
+        <IconContext.Provider value={{ size: "20px" }}>
+          <AiOutlineDown />
+          <span className="w-7" />
           <AiOutlineMenu />
         </IconContext.Provider>
       </span>
