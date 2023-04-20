@@ -44,7 +44,7 @@ export default function TopbarMain(
 ) {
   return (
     <div className="sticky top-0 w-full px-14 py-5 bg-white flex flex-row">
-      <img src={LogoNoBG} className="h-20 mr-12" />
+      <img src={LogoNoBG} alt="公民新聞標誌" className="h-20 mr-12" />
       <div className="shrink flex flex-row justify-between items-end overflow-auto">
         {categories.map((cate) => {
           return (
@@ -69,7 +69,7 @@ export default function TopbarMain(
 export function Topbar(currentUser: any, setCurrentUser: React.Dispatch<any>) {
   return (
     <div className="sticky top-0 w-full px-10 py-2 flex flex-row justify-between">
-      <img src={LogoNoBG} className="h-12" />
+      <img src={LogoNoBG} alt="公民新聞標誌" className="h-12" />
       <span className="shrink-0 flex flex-row items-center pb-0.5">
         <IconContext.Provider value={{ size: "20px", color: "#466D9E" }}>
           <AiOutlineDown />
