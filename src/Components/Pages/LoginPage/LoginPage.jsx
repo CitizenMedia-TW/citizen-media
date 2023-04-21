@@ -2,8 +2,12 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import AuthService from "../../../services/auth.service";
 import { MdPeople, MdMail, MdLock } from "react-icons/md";
+import { Link } from 'react-router-dom'
 
 import InputField from "./InputField.tsx";
+
+import LoginWithGoogle from "./LoginWithGoogle";
+import LoginWithFacebook from "./LoginWithFacebook";
 
 const LoginPage = ({ currentUser, setCurrentUser }) => {
   const navigate = useNavigate();
@@ -47,6 +51,10 @@ const LoginPage = ({ currentUser, setCurrentUser }) => {
   return (
     <div className="flex justify-center mt-16">
       <div className="py-8 px-12 rounded-md border-2 border-sky-700">
+        
+        <LoginWithGoogle/>
+        <LoginWithFacebook/>
+
         <div className="font-mono mb-6 text-3xl text-sky-900">
           <h1>
             <span class="shadow-[inset_0_-14px_0_#facc15]">&nbsp;REGI</span>
@@ -73,12 +81,13 @@ const LoginPage = ({ currentUser, setCurrentUser }) => {
           >
             Sign Up
           </button>
-          <button
+          <Link
+            to = "/Register"
             className="hover:text-sky-700 underline underline-offset-1 text-sky-900"
             onClick={handleLogin}
           >
             Login
-          </button>
+          </Link>
         </div>
       </div>
     </div>
