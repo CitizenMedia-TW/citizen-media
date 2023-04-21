@@ -61,6 +61,7 @@ const LoginPage = ({ currentUser, setCurrentUser }) => {
             STER
           </h1>
         </div>
+
         {message && <div>{message}</div>}
         <InputField
           img={MdPeople}
@@ -75,19 +76,43 @@ const LoginPage = ({ currentUser, setCurrentUser }) => {
           type={"password"}
         />
         <div className="grid justify-items-center">
-          <button
-            className="hover:bg-yellow-500 px-8 py-2 mb-4 justify-center flex rounded-md bg-yellow-300"
-            onClick={handleRegister}
-          >
-            Sign Up
-          </button>
-          <Link
-            to = "/Register"
-            className="hover:text-sky-700 underline underline-offset-1 text-sky-900"
-            onClick={handleLogin}
-          >
-            Login
-          </Link>
+            <button
+              className="hover:bg-yellow-500 px-8 py-2 mb-4 justify-center flex rounded-md bg-yellow-300"
+              onClick={handleRegister}
+            >
+              Sign Up
+            </button>
+
+          {message && <div>{message}</div>}
+          
+          <InputField
+            img={MdPeople}
+            placeholder={"Username"}
+            onChange={handleUsername}
+          />
+          <InputField img={MdMail} placeholder={"Email"} onChange={handleEmail} />
+          <InputField
+            img={MdLock}
+            placeholder={"Password"}
+            onChange={handlePassword}
+            type={"password"}
+          />
+          
+          <div className="grid justify-items-center">
+            <button
+              className="hover:bg-yellow-500 px-8 py-2 mb-4 justify-center flex rounded-md bg-yellow-300"
+              onClick={handleRegister}
+            >
+              Sign Up
+            </button>
+            <Link
+              to = "/Register"
+              className="hover:text-sky-700 underline underline-offset-1 text-sky-900"
+              onClick={handleLogin}
+            >
+              Login
+            </Link>
+          </div>
         </div>
       </div>
     </div>
