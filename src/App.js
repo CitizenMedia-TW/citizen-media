@@ -5,6 +5,7 @@ import Topbar from "./Components/Layout/Topbar/Topbar";
 import Footer from "./Components/Layout/Footer/Footer";
 import HomePage from "./Components/Pages/HomePage/HomePage";
 import LoginPage from "./Components/Pages/LoginPage/LoginPage";
+import RegisterPage from "./Components/Pages/LoginPage/RegisterPage";
 import PopularPage from "./Components/Pages/PopularPage/PopularPage";
 /* import PoliticsPage from './Components/Pages/PoliticsPage/PoliticsPage' */
 
@@ -29,6 +30,16 @@ const App = () => {
           path="/login"
           element={
             <LoginPage
+              currentUser={currentUser}
+              setCurrentUser={setCurrentUser}
+            />
+          }
+        />
+        <Route
+          exact
+          path="/register"
+          element={
+            <RegisterPage
               currentUser={currentUser}
               setCurrentUser={setCurrentUser}
             />
