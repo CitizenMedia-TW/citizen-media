@@ -1,6 +1,5 @@
 import React from 'react';
-import { GoogleLogin } from "@react-oauth/google";
-import { GoogleOAuthProvider } from '@react-oauth/google';
+import { GoogleLogin, GoogleOAuthProvider } from "@react-oauth/google";
 
 import { Google_Client_Id } from "./Client_Id";
 
@@ -10,16 +9,25 @@ const LoginWithGoogle = () => {
     }
 
     return (
-        <GoogleOAuthProvider clientId={Google_Client_Id}>
-            <GoogleLogin
-                clientId = {Google_Client_Id}
-                shape="rectangular"
-                text = "continue_with"
-                onSuccess={responseGoogle}
-                onFailure={responseGoogle}
-                cookiePolicy={'single_host_origin'}
-            />
-        </GoogleOAuthProvider>
+        <div className = "mb-3 h-11 px-1 flex items-center bg-white border-2 border-loginBorder rounded-4xl">
+            <GoogleOAuthProvider clientId={Google_Client_Id}>
+                <GoogleLogin
+                    clientId = {Google_Client_Id}
+
+                    locale='en-US'
+                    logo_alignment = "center"
+                    text = "continue_with"
+                    size = "large"
+                    width='380px'
+                    shape = "circle"
+
+                    onSuccess={responseGoogle}
+                    onFailure={responseGoogle}
+                    cookiePolicy={'single_host_origin'}
+                    isSignedIn={false}      
+                />
+            </GoogleOAuthProvider>
+        </div>
     );
 };
 
