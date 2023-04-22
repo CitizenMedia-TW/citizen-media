@@ -13,13 +13,18 @@ export default function InputField(props: Props) {
   return (
     <div
       className={
-        "mb-7 py-1 px-4 rounded-md border-2 border-sky-700 flex flex-row " +
+        "w-96 h-14 mb-7 py-1 px-4 rounded-md border-3 border-loginBorder flex flex-row " +
         (props.className ? props.className : "")
       }
     >
-      <IconContext.Provider value={{ color: "#646464", size: "22px" }}>
-        <props.img />
-      </IconContext.Provider>
+
+      {/* username, e-mail, password icon */}
+      <div className="flex items-center">
+        <IconContext.Provider value={{ color: "#646464", size: "28px" }}>
+          <props.img />
+        </IconContext.Provider>
+      </div>
+
       <input
         placeholder={props.placeholder}
         onChange={props.onChange}
