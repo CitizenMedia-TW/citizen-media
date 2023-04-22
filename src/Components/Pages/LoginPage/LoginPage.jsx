@@ -115,7 +115,7 @@ const LoginPage = ({ currentUser, setCurrentUser }) => {
                   hover:text-sky-700 underline-offset-1 text-loginText"
                 onClick={handleLogin}
               >
-                Creat Account
+                Create Account
               </Link>
             </div>
 
