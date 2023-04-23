@@ -6,14 +6,9 @@ const NewsBlock = ({newsDetail}) => {
   const {title, description, img, id} = newsDetail;
 
   return (
-    <div className="news_child">
+    <div className="w-[320px] h-[150px] bg-zinc-200 opacity-70 rounded-md">
+      <p className="news_title">{"Bootcamp"}</p>
       <p className="news_title">{title}</p>
-      <img className="news_img" src={img} alt="" />
-      <p className="news_info">{description}</p>
-
-      <Link to = {`/news/${id}`} rel="noreferrer">
-        <button className="button_more_info">更多內容...</button>
-      </Link>
     </div>
   );
 };
