@@ -1,9 +1,13 @@
 import "./Title.css";
+import { FiThumbsUp } from "react-icons/fi"
 
 const Title = () => {
     return (
-        <div>
-            <h1 className="home_title_text">Welcome to 公民新聞</h1>
+        <div className="flex">
+            <div className="mt-1 mx-3">
+                <FiThumbsUp />
+            </div>
+            <h1 className="text-black-200">Official Recommendation</h1>
         </div>
     )
 }
