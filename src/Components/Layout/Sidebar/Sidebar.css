@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
 
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -22,6 +24,8 @@
   background-color: var(--sidebar-pages-color);
 }
 
+
+
 .navbar {
   background-color: var(--sidebar-nav-bar-background);
   height: 80px;
@@ -38,26 +42,27 @@
   color: var(--sidebar-menu-bars);
 }
 
-.line{
-  width: 100%;
+.bot-line{
+  width: 140px;
   margin-bottom: 4px;
   margin-top: 4px;
   display: flex;
   justify-content: center;
   align-items: center;
-  border-bottom: 1.5px solid var(--sidebar-line-borderbottom);
+  border-top: 2px solid var(--sidebar-line-borderbottom);
+  background-color: var(--sidebar-line-borderbottom);
 }
 
 .nav-menu {
   background-color: var(--sidebar-nav-menu-background-color);
   border-right: 1px solid var(--sidebar-nav-menu-border-right);
-  width: 210px;
+  width: 270px;
   height: 100vh;
   display: flex;
   justify-content: center;
   position: fixed;
   top: 0;
-  left: -250px;
+  left: -270px;
   transition: 200ms;
 }
 
@@ -75,17 +80,17 @@
   font-weight: bold;
   list-style: none;
   height: 60px;
+  padding-left:0;
 }
 
 .nav-text a {
   text-decoration: none;
-  color: #343434;
-  font-size: 18px;
-  width: 90%;
+  color: #FFFFFF;
+  font-size: 21px;
+  width: 100%;
   height: 100%;
   display: flex;
   align-items: center;
-  padding: 0 16px;
 }
 
 .nav-text a:hover {
@@ -149,24 +154,41 @@ span {
   position:absolute;
   bottom: 0; 
   width: 100%; 
-  height: 85px; 
-  /* border: 1px; */
+  height: 70px; 
+  background-color: var(--sidebar-bottomBlock-background);
+}
+
+.topBlock{
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 70px;
   background-color: var(--sidebar-bottomBlock-background);
 }
 
 .logo{
   display: flex;
-  width: 90%;
-  margin-left: 0.5em;
-  /* padding-top:4px; */
-  /* padding-bottom: 20px; */
+  width: 50%;
+  margin-left: 40%;
+  padding-top:5%;
+}
+
+.close{
+  display: flex;
+  width: 12%;
+  margin-left: 82%;
+  padding-top:10%;
 }
 
 .main__item{
   height: calc(100vh - 250px);
   bottom: 0;
   z-index: 500;
-  display: block;
+  display: flex;
+  flex-direction: column;
   overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
-  border-bottom: 0
+  border-bottom: 0;
+  margin-top: 75%;
+  margin-left:5%;
+  margin-right:12%;
 }

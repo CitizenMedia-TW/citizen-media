@@ -26,14 +26,14 @@ code {
     --sidebar-nav-bar-background: #ffffff;
     --sidebar-nav-text-hover-background: #000000;
     --sidebar-nav-text-hover-color: #fff;
-    --sidebar-bottomBlock-background: #f3f3f3;
+    --sidebar-bottomBlock-background: #426ca3;
 
     --sidebar-pages-color: #f3f3f3;
     --sidebar-pages-background-color: #000;
 
-    --sidebar-line-borderbottom: lightgray;
+    --sidebar-line-borderbottom: #24456d;
 
-    --sidebar-nav-menu-background-color: #f3f3f3;
+    --sidebar-nav-menu-background-color: #426ca3;
     --sidebar-nav-menu-border-right: #1e1e1e;
 
     --sidebar-searchBar-box-shadow: 4px 4px 10px rgba(163,177,198,0.5), -4px -4px 10px rgba(255, 255, 255, 0.7);

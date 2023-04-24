@@ -4,7 +4,7 @@ import { FiFacebook, FiHome, FiInstagram } from "react-icons/fi";
 
 const Footer = () => {
   return (
-    <div class="w-full h-full bg-[#133157] items-center sticky mb-0">
+    <div class="w-full h-full bg-[#133157] items-center sticky mb-0 ">
       <div class="h-7"></div>
       <div class="sm:flex flex-wrap ">
         <div class="ml-20">
