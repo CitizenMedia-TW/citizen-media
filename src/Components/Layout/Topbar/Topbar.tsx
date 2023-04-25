@@ -26,6 +26,7 @@ function handleLogout(setCurrentUser: React.Dispatch<any>) {
   AuthService.logout();
   window.alert("Logout completed");
   setCurrentUser(null);
+}
 
 function menuIcon() {
   return (
