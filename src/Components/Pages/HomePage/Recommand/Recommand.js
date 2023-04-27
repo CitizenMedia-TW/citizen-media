@@ -1,4 +1,3 @@
-import "./Title.css";
 import { FiThumbsUp } from "react-icons/fi"
 
 const Title = () => {

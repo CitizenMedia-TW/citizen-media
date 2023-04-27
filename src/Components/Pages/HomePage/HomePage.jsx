@@ -1,10 +1,8 @@
 import React from "react";
 
-import Carousel from "./Carousel/Carousel.js";
-import Title from "./Title/Title.js";
+import Recommand from "./Recommand/Recommand.js";
 import SideScrollNews from "./SideScrollNews/SideScrollNews.js";
 import Author from "./Author/Author.jsx";
-import news from "../../Data/news.json";
 
 import "./HomePage.css";
 import SideNews from "./SideNews/SideNews.jsx";
@@ -14,8 +12,7 @@ import { FiEye, FiPenTool } from "react-icons/fi"
 const HomePage = () => {
   return (
     <div className="">
-      <Title />
-      <Carousel dataset={news}/>
+      <Recommand />
       <div className="w-full h-[1rem] border-b-2">
         
       </div>
