@@ -23,4 +23,5 @@ yarn-debug.log*
 yarn-error.log*
 /.vim/coc-settings.json
 
+.vs/
 .vscode
