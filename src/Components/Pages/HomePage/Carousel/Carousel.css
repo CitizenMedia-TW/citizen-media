@@ -1,0 +1,247 @@
+/* 檢查用 */
+/* * {
+  background: #000 !important;
+  color: #0f0 !important;
+  outline: solid #f00 1px !important;
+} */
+
+.news_child {
+  width: 80%;
+  height: auto;
+
+  opacity: 100%;
+  background-color: #d9d9d9;
+
+  border-radius: 20px;
+
+  display: inline-block;
+  filter: drop-shadow(8px 10px 10px rgba(255, 255, 255, 0.3));
+
+}
+
+.news_title {
+  color: #000000;
+  background-color: #d9d9d9;
+  border-radius: 10px;
+  
+  white-space: pre-wrap;
+  font-family: "Noto Sans TC";
+  font-size: 100%;
+  font-weight: 700;
+  line-height: 150%;
+  letter-spacing: 0.1em;
+
+  white-space: pre-wrap;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+
+  margin: 2% 4%; 
+}
+
+.news_img {
+  max-width: 90%; 
+  
+  display: block;
+  margin: auto;
+  
+  border-radius: 18px;
+  margin-bottom: 2%;
+}
+
+.news_info{
+  color: #414141;
+  
+  font-family: "Noto Sans TC";
+  font-size: 90%;
+
+  white-space: pre-wrap;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+
+  margin-left: 4.5%;
+  margin-right: 4.5%;
+  margin-bottom: 2%;
+}
+
+.carousel {
+  overflow: hidden;
+  position: relative;
+}
+
+.inner {
+  white-space: nowrap;
+  transition: transform 0.3s;
+}
+
+.carousel-item {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  max-width: 90%;
+  max-height: 80%;
+
+  background-color: #414141;
+  color: #fff;
+
+  margin: 2% 0.5% 1% 0.5%;
+  transform: scale3d(0.8, 0.8, 1);
+  transition: all 0.3s ease-in-out;
+}
+
+.carousel-more_item {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 30%;
+
+  background-color: #414141;
+  color: #fff;
+
+  transform: scale3d(0.8, 0.8, 1);
+  transition: all 0.3s ease-in-out;
+  padding-top: 0%;
+  margin-top: -10%;
+  margin-bottom: -50%;
+}
+
+.carousel-more_child {
+  display: inline-table;
+  align-items: center;
+  justify-content: center;
+
+  width: 120%;
+
+  border-radius: 20px;
+
+  background-color: #414141;
+  border: 5px solid #D9D9D9;
+  color: #fff;
+  
+  margin-top: -330%;
+  padding: 1%;
+}
+
+.carousel-more_line{
+  width: 80%;
+
+  background-color: #FDB31F;
+  border-top: 3px solid #FDB31F;
+  border-bottom: 0px;
+  border-left: 0px;
+  border-right: 0px;
+  
+  margin-left: 10%;
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
+
+.carousel-more_info{
+  color: #fff;
+  border: 3px solid #D9D9D9;
+  
+  white-space: pre-wrap;
+  font-family: "Noto Sans TC";
+  text-align: center;
+  font-size: 200%;
+  font-weight: 700;
+  line-height: 150%;
+  letter-spacing: 0.1em;
+
+  margin: 4% 8%;
+  padding: 4% 0%;
+
+  text-decoration: underline;
+  text-decoration-color: #414141;
+}
+
+#active-item {
+  transform: scale3d(1.0, 1.0, 1);
+}
+
+.indicators {
+  display: flex;
+  justify-content: center;
+  font-family: "Noto Sans TC";
+}
+
+.indicators > button {
+  margin: 0.25%;
+  padding: 0.25% 0.5%;
+
+  border-radius: 2px;
+  border-color: rgba(0, 0, 0, 0.0);
+}
+
+.indicators > button.active {
+  background-color: #414141;
+  color: #fff;
+  border: 2px solid #fff;
+}
+
+.indicators :hover{
+  background-color: #414141;
+  color: #fff;
+  cursor: pointer; 
+  border: 2px solid #fff;
+}
+
+.button_more_info {
+  background-color: #838383;
+  color: #ffffff;
+
+  float: right;
+  margin-right: 5%;
+  margin-bottom: 2%;
+  padding: 0.5% 2%;
+  border-radius: 19px;
+  
+  font-family: "Noto Sans TC";
+  font-size: 85%;
+  cursor: pointer;
+}
+
+.button_more_info:hover {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.arrow_button_container{
+  width: 1%;
+  position: absolute;
+
+  
+
+  bottom: 48%;
+}
+
+.left_arrow_button_container{
+  left: 33%;
+}
+
+.right_arrow_button_container{
+  left: 67%;
+}
+
+.arrow_button{
+  font-size: 100%;
+  letter-spacing: 0.05em;
+
+  border-radius: 5px;
+  border-color: rgba(0, 0, 0, 0.0);
+
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 4%;
+  padding-bottom: 0.05%;
+}
+
+.arrow_button:hover {
+  background-color: #000000;
+  color: #ffffff;
+}

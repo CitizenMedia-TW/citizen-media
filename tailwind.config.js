@@ -4,11 +4,7 @@ module.exports = {
     "./src/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
-    fontFamily:{
-      'sans': ['Noto Sans TC']
-    },
-    extend: {
-    },
+    extend: {},
   },
   plugins: [],
 }
