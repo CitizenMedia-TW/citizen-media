@@ -36,10 +36,6 @@ const Sidebar = () => {
                         )
                     })} 
                 </div>   
-                <div className="bottomBlock">
-                    <div className="line"></div>
-                    <img className="logo" src={LogoNoBG} alt="logo" />  
-                </div>
             </ul> 
             <div class='absolute bottom-0 w-full h-[70px] bg-[#426CA3]'>
             <img src={Logo} class='flex w-1/2 ml-[40%] pt-[5%]'></img>
