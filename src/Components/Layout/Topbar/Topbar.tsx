@@ -49,7 +49,7 @@ export default function TopbarMain(
       <div className="shrink flex flex-row justify-between items-end overflow-auto">
         {categories.map((cate) => {
           return (
-            <span className="first:ml-0 last:mr-0 mx-3 text-xl text-[#515861]">
+            <span className="first:ml-0 ml-3 text-xl text-[#515861] after:content-['|'] after:ml-3 last:after:content-none">
               {cate}
             </span>
           );
