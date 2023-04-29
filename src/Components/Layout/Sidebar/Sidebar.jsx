@@ -21,7 +21,7 @@ const Sidebar = () => {
             </Link>
         </div>
         <nav class={sidebar ? 'bg-[#426CA3]  border-r-2 border-solid w-[270px] h-[100vh] flex justify-center fixed top-0 left-0 transition-[200ms]' : 'bg-[#426CA3] border-r-2 border-solid w-[270px] h- flex justify-center fixed top-0 left-[-270px] transition-[200ms]'}>
-            <div class='absolute top-0 w-full h-16 bg-side-bg-blue'>
+            <div class='absolute top-0 w-full h-16 bg-[#426CA3]'>
                 <input type='button' class='bg-[url(/Assets/Close.png)] w-10 h-1/6 ml-56 mt-3 pt-6'></input>
             </div>
             <ul className = "w-full" onMouseLeave={toggleSidebar}>       
@@ -41,8 +41,8 @@ const Sidebar = () => {
                     <img className="logo" src={LogoNoBG} alt="logo" />  
                 </div>
             </ul> 
-            <div class='absolute bottom-0 w-full h-[70px] bg-side-bg-blue'>
-            <   img src={Logo} class='flex w-1/2 ml-[40%] pt-[5%]'></img>
+            <div class='absolute bottom-0 w-full h-[70px] bg-[#426CA3]'>
+            <img src={Logo} class='flex w-1/2 ml-[40%] pt-[5%]'></img>
             </div>
         </nav>
     </>
