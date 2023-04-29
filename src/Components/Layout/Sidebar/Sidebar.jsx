@@ -16,7 +16,7 @@ const Sidebar = () => {
   return (
     <>
         <div class='ml-1 mr-4 text-3xl bg-none text-white'>
-            <Link to = "#" className = "menu-bars">
+            <Link to = "#">
                 <FaIcons.FaBars onMouseEnter={toggleSidebar}/>
             </Link>
         </div>
