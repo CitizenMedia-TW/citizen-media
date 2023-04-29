@@ -180,6 +180,13 @@ span {
   padding-top:5%;
 }
 
+.close{
+  display: flex;
+  width: 12%;
+  margin-left: 82%;
+  padding-top:10%;
+}
+
 .main__item{
   height: calc(100vh - 250px);
   bottom: 0;
