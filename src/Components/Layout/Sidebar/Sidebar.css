@@ -175,10 +175,9 @@ span {
 
 .logo{
   display: flex;
-  width: 90%;
-  margin-left: 0.5em;
-  /* padding-top:4px; */
-  /* padding-bottom: 20px; */
+  width: 50%;
+  margin-left: 40%;
+  padding-top:5%;
 }
 
 .main__item{
