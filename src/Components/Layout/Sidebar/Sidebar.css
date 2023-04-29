@@ -62,13 +62,13 @@
 .nav-menu {
   background-color: var(--sidebar-nav-menu-background-color);
   border-right: 1px solid var(--sidebar-nav-menu-border-right);
-  width: 210px;
+  width: 270px;
   height: 100vh;
   display: flex;
   justify-content: center;
   position: fixed;
   top: 0;
-  left: -250px;
+  left: -270px;
   transition: 200ms;
 }
 
