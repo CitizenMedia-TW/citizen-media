@@ -48,6 +48,17 @@
   border-bottom: 1.5px solid var(--sidebar-line-borderbottom);
 }
 
+.bot-line{
+  width: 140px;
+  margin-bottom: 4px;
+  margin-top: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 2px solid var(--sidebar-line-borderbottom);
+  background-color: var(--sidebar-line-borderbottom);
+}
+
 .nav-menu {
   background-color: var(--sidebar-nav-menu-background-color);
   border-right: 1px solid var(--sidebar-nav-menu-border-right);
