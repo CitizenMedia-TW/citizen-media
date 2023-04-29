@@ -4,27 +4,23 @@ import * as AiIcons from "react-icons/ai";
 
 export const SidebarData = [
   {
-    title: "收藏",
+    title: "我的收藏",
     path: "/collect",
-    icons: <FaIcons.FaBookmark />,
-    cName: "nav-text",
-  },
-  {
-    title: "通知",
-    path: "/notify",
-    icons: <FaIcons.FaBell />,
     cName: "nav-text",
   },
   {
     title: "我的文章",
     path: "/stories/my-stories",
-    icons: <FaIcons.FaFile />,
+    cName: "nav-text",
+  },
+  {
+    title: "通知",
+    path: "/notify",
     cName: "nav-text",
   },
   {
     title: "設定",
     path: "/setting",
-    icons: <AiIcons.AiTwotoneSetting />,
     cName: "nav-text",
   },
 ];
