@@ -191,7 +191,11 @@ span {
   height: calc(100vh - 250px);
   bottom: 0;
   z-index: 500;
-  display: block;
+  display: flex;
+  flex-direction: column;
   overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
-  border-bottom: 0
+  border-bottom: 0;
+  margin-top: 75%;
+  margin-left:5%;
+  margin-right:12%;
 }
