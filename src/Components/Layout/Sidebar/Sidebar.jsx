@@ -22,7 +22,7 @@ const Sidebar = () => {
         </div>
         <nav class={sidebar ? 'bg-[#426CA3]  border-r-2 border-solid w-[270px] h-[100vh] flex justify-center fixed top-0 left-0 transition-[200ms]' : 'bg-[#426CA3] border-r-2 border-solid w-[270px] h- flex justify-center fixed top-0 left-[-270px] transition-[200ms]'}>
             <div class='absolute top-0 w-full h-16 bg-[#426CA3]'>
-                <input type='button' class='bg-[url(../../../Assets/Close.png)] w-10 h-1/6 ml-56 mt-3 pt-6'></input>
+                <input type='button' class="bg-[url('/src/Assets/Close.png')] w-10 h-1/6 ml-56 mt-3 pt-6"></input>
             </div>
             <ul className = "w-full" onMouseLeave={toggleSidebar}>       
                 <div class= 'h-[100vh_-_250px] bottom-0 z-[500] flex flex-col overflow-y-auto border-b-0 mt-[75%] ml-[5%] mr-[12%]'>
