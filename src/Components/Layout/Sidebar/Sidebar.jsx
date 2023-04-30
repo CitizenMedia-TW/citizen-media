@@ -15,12 +15,12 @@ const Sidebar = () => {
 
   return (
     <>
-        <div class='ml-1 mr-4 text-3xl bg-none text-white'>
+        <div class='ml-1 mr-4 text-xl bg-none text-[#426CA3]'>
             <Link to = "#">
                 <FaIcons.FaBars onMouseEnter={toggleSidebar}/>
             </Link>
         </div>
-        <nav class={sidebar ? 'bg-[#426CA3]  border-r-2 border-solid w-[270px] h-[100vh] flex justify-center fixed top-0 left-0 transition-[200ms]' : 'bg-[#426CA3] border-r-2 border-solid w-[270px] h- flex justify-center fixed top-0 left-[-270px] transition-[200ms]'}>
+        <nav class={sidebar ? 'bg-[#426CA3]  border-r-2 border-solid w-[270px] h-[100vh] flex justify-center fixed top-0 right-0 transition-[200ms] z-0' : 'bg-[#426CA3] border-r-2 border-solid w-[270px] h- flex justify-center fixed top-0 right-[-270px] transition-[200ms]'}>
             <div class='absolute top-0 w-full h-16 bg-[#426CA3]'>
                 <input type='button' class="bg-[url('/src/Assets/Close.png')] w-10 h-1/6 ml-56 mt-3 pt-6"></input>
             </div>
