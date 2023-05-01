@@ -4,14 +4,12 @@ import AuthService from "../../../services/auth.service";
 import { MdPeople, MdMail, MdLock } from "react-icons/md";
 import { Link } from 'react-router-dom'
 
-import "./test.css"
-
 import InputField from "./InputField.tsx";
 
 import LoginWithGoogle from "./LoginWithGoogle";
 import LoginWithFacebook from "./LoginWithFacebook";
 
-const LoginPage = ({ currentUser, setCurrentUser }) => {
+const RegisterPage = ({ currentUser, setCurrentUser }) => {
   const navigate = useNavigate();
   let [username, setUsername] = useState("");
   let [email, setEmail] = useState("");
@@ -40,6 +38,16 @@ const LoginPage = ({ currentUser, setCurrentUser }) => {
     }
   };
 
+  const handleSignup = async () => {
+    try {
+      await AuthService.signup(username, email, password);
+      window.alert("Signup succeed, you can login now");
+      navigate("/login");
+    } catch (err) {
+      window.alert(err.response.data);
+    }
+  };
+
   const handleRegister = async () => {
     try {
       await AuthService.register(username, email, password);
@@ -56,7 +64,7 @@ const LoginPage = ({ currentUser, setCurrentUser }) => {
       {/* 標頭 */}
       <div className="w-auto mt-7/100 ml-7/100 pb-4">
         <p className="font-serif font-medium text-5xl text-loginText">
-          <span class="font-serif shadow-[inset_0_-14px_0_#facc15]">&nbsp;LOGI</span>N
+          <span class="font-serif shadow-[inset_0_-14px_0_#facc15]">&nbsp;REGI</span>STER
         </p>
       </div>   
 
@@ -81,6 +89,11 @@ const LoginPage = ({ currentUser, setCurrentUser }) => {
             {message && <div>{message}</div>}
             
             <InputField
+              img={MdPeople}
+              placeholder={"Username"}
+              onChange={handleUsername}
+            />
+            <InputField
               img={MdMail} 
               placeholder={"Email"} 
               onChange={handleEmail} 
@@ -100,22 +113,16 @@ const LoginPage = ({ currentUser, setCurrentUser }) => {
                   bg-yellow-300 text-loginText hover:bg-yellow-500"
                 onClick={handleRegister}
               >
-                LOGIN
-              </button>
-              <button
-                className="mt-5/100 text-base hover:text-sky-700 underline underline-offset-1 text-loginText"
-                onClick={handleLogin}
-              >
-                Forget Password?
+                SIGN UP
               </button>
               <Link
-                to = "/Register"
+                to = "/Login"
                 className="
                   mt-5/100 font-serif font-medium text-base underline 
                   hover:text-sky-700 underline-offset-1 text-loginText"
                 onClick={handleLogin}
               >
-                Create Account
+                LOGIN
               </Link>
             </div>
 
@@ -126,4 +133,4 @@ const LoginPage = ({ currentUser, setCurrentUser }) => {
   );
 };
 
-export default LoginPage;
+export default RegisterPage;

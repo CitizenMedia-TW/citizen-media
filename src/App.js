@@ -2,8 +2,10 @@ import React, { useState } from "react";
 import { HashRouter as Router, Routes, Route } from "react-router-dom";
 
 import Topbar from "./Components/Layout/Topbar/Topbar";
+import Footer from "./Components/Layout/Footer/Footer";
 import HomePage from "./Components/Pages/HomePage/HomePage";
 import LoginPage from "./Components/Pages/LoginPage/LoginPage";
+import RegisterPage from "./Components/Pages/LoginPage/RegisterPage";
 import PopularPage from "./Components/Pages/PopularPage/PopularPage";
 /* import PoliticsPage from './Components/Pages/PoliticsPage/PoliticsPage' */
 
@@ -33,6 +35,16 @@ const App = () => {
             />
           }
         />
+        <Route
+          exact
+          path="/register"
+          element={
+            <RegisterPage
+              currentUser={currentUser}
+              setCurrentUser={setCurrentUser}
+            />
+          }
+        />
         <Route exact path="/popular" element={<PopularPage />} />
         {/* SideBar */}
         <Route exact path="/notify" element={<NotifyPage />} />
@@ -50,6 +62,8 @@ const App = () => {
         <Route exact path="/collect" element={<CollectPage />} />
         <Route exact path="/news/:id" element={<NewsPageMain />} />
       </Routes>
+
+      <Footer />
     </Router>
   );
 };
