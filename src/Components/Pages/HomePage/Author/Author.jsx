@@ -1,13 +1,20 @@
 
 import NewsData from "../../../Data/news.json"
-
+import { FiPenTool } from "react-icons/fi"
 
 const Author = () => {
     return (
-        <div className="flex flex-row -translate-y-4">
+        <div className="h-full">
+        <div className="pl-4 pt-3 font-bold flex ">
+            <div className="mt-1 mr-2">
+              <FiPenTool />
+            </div>
+            Trace Author
+        </div>
+        <div className="flex flex-row -translate-y-4 overflow-x-auto">
             {NewsData.map((item) => {
                 return (
-                    <div className="h-[14rem] mx-6">
+                    <div className="h-[16rem] mx-6">
                         <div>
                             <img className="rounded-full w-[4rem] h-[4rem] translate-y-8 -translate-x-4 border-8 border-white" src={item.banner} alt="logo"></img>
                         </div>
@@ -22,8 +29,10 @@ const Author = () => {
                     </div>
                 )
             })} 
-        </div>    
+        </div> 
+        </div>   
         )
     }
 
 export default Author;
+
