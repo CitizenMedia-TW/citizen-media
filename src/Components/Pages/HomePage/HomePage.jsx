@@ -3,10 +3,10 @@ import React from "react";
 import Recommand from "./Recommand/Recommand.js";
 import SideScrollNews from "./SideScrollNews/SideScrollNews.js";
 import Author from "./Author/Author.jsx";
-
+import MostView from "./MostView/MostView.jsx";
 import "./HomePage.css";
 import SideNews from "./SideNews/SideNews.jsx";
-import { FiEye, FiPenTool } from "react-icons/fi"
+import { FiEye } from "react-icons/fi"
 
 
 const HomePage = () => {
@@ -27,16 +27,10 @@ const HomePage = () => {
           </div>
           Most viewed
         </div>
-        <div className="h-[20rem] my-1 bg-amber-50">
-
+        <div className="h-[20rem] my-1 bg-amber-50 items-center justify-center flex overflow-x-scroll">
+          <MostView />
         </div>
         <div className="h-[16rem] border-t-2 border-gray-300">
-          <div className="pl-4 pt-3 font-bold flex ">
-            <div className="mt-1 mr-2">
-              <FiPenTool />
-            </div>
-            Trace Author
-          </div>
           <Author />
         </div>
       </div>
