@@ -30,12 +30,13 @@ function handleLogout(setCurrentUser: React.Dispatch<any>) {
 
 function menuIcon() {
   return (
-    <div className="shrink-0 grid grid-rows-4 gap-1">
-      <span className="w-8 h-0.5 bg-[#466D9E]" />
-      <span className="w-8 h-0.5 bg-[#466D9E]" />
-      <span className="w-8 h-0.5 bg-[#F8B61CA3]" />
-      <span className="w-8 h-0.5 bg-[#466D9E]" />
-    </div>
+    // <div className="shrink-0 grid grid-rows-4 gap-1">
+    //   <span className="w-8 h-0.5 bg-[#466D9E]" />
+    //   <span className="w-8 h-0.5 bg-[#466D9E]" />
+    //   <span className="w-8 h-0.5 bg-[#F8B61CA3]" />
+    //   <span className="w-8 h-0.5 bg-[#466D9E]" />
+    // </div>
+    <Sidebar/>
   );
 }
 
