@@ -1,16 +1,21 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;700;900&display=swap");
 
 .draft {
-  flex-direction: column;
+    flex-direction: column;
 }
 
 /* TitTap Editor Design */
 .ProseMirror {
-  padding: 10px;
-  border-top: 1px solid grey;
-  background: white;
-  border-radius: 0 0 5px 5px;
-  min-height: 100px;
+    margin-left: 5em;
+    margin-right: 4em;
+    margin-bottom: -3em;
+    background: #FFFFFF;
+    border: 3px solid #698DBA;
+    border-radius: 10px;
+    font-size: 18px;
+    min-height: 300px; /* 最小高度為300px */
+    height: auto; /* 高度自動適應內容 */
+    flex-grow: 1;
 }
 .ProseMirror:focus {
   border: none;
@@ -35,10 +40,10 @@
   line-height: 1.1;
 }
 
-.ProseMirror code {
-  background-color: rgba(#616161, 0.1);
-  color: #616161;
-}
+    .ProseMirror code {
+        background-color: rgba(#616161, 0.1);
+        color: #0d0d0d;
+    }
 
 .ProseMirror pre {
   background: #0d0d0d;
@@ -71,15 +76,100 @@
 }
 
 /* ............................ */
-.textEditor {
-  border-radius: 5px;
-  border: 1px solid grey;
+
+
+
+
+.draft-container {
+    display: flex;
+    flex-direction: column;
+    
+    position: absolute;
+    left: 7.36%;
+    right: 7.43%;
+    top: 16.02%;
+    bottom: -40%;
+    background: #FFFFFF;
+    border: 5px solid #466D9E;
+    border-radius: 15px;
+}
+
+ 
+    .draft-container label {
+        display: block;
+        font-weight: bold;
+        margin-bottom: 5px;
+    }
+.frame1 {
+    margin-top: 1em;
+    margin-left: 5em;
+    margin-right: 25em;
+    margin-bottom: -3em;
+    background: #FFFFFF;
+    border: 3px solid #698DBA;
+    border-radius: 10px;
+    padding: 5px;
+    font-size: 18px;
+    min-height: 100px; /* 最小高度為300px */
+    height: auto; /* 高度自動適應內容 */
+}
+.frame2 {
+    margin-top: 1em;
+    margin-left: 5em;
+    margin-right: 4em;
+    margin-bottom: -3em;
+    background: #FFFFFF;
+    border: 3px solid #698DBA;
+    border-radius: 10px;
+    padding: 5px;
+    font-size: 18px;
+    min-height: 80px; /* 最小高度為300px */
+    height: auto; /* 高度自動適應內容 */
+}
+.tex1 {
+    margin-top: 3em;
+    margin-left: 3em;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 39px;
+    /* identical to box height */
+    letter-spacing: 0.005em;
+    color: #454545;
+}
+
+
+
+.alert {
+    background-color: #f8d7da;
+    color: #721c24;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 2px solid #f5c6cc;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.alert-danger {
+    color: #0d0d0d;
+}
+.container {
+    display: flex;
+    flex-wrap: wrap; /* 讓子元素可以自動換行 */
+    flex-direction: column;
 }
 .menuBar {
-  padding-bottom: 5px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+    margin-left: 2em;
+    margin-right: 1.5em;
+    margin-top: auto;
+    background: #698DBA;
+    border: 3px solid #98B0CD;
+    border-radius: 10px;
+    height: 80px;
+    display: flex; /* 將 .menuBar 設置為 flex container */
+    align-items: center; /* 垂直居中 */
+    justify-content: flex-start; /* 水平靠左對齊 */
 }
 .menuBar button {
   font-size: 18px;
@@ -104,3 +194,23 @@ button.is_active {
   padding: 2px 3px;
   border-radius: 2px;
 }
+
+.post {
+    margin-top: 3em;
+    margin-left: 3em;
+    width: 200px;
+    margin-bottom: 3em;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 39px;
+    border: 3px solid #98B0CD;
+    border-radius: 10px;
+    letter-spacing: 0.005em;
+    background: #698DBA;
+}
+
+
+
+
