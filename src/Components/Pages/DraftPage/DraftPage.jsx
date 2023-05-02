@@ -134,8 +134,6 @@ const DraftPage = ({ currentUser }) => {
   return (
     <div className="draft">
       {message && <div className="alert alert-danger">{message}</div>}
-      {!currentUser && <div>Login First </div>}
-      {currentUser && (
         <div>
           <input type="text" onChange={handleTitle} name="title" />
           <input type="text" onChange={handleDescription} name="description" />
@@ -145,7 +143,6 @@ const DraftPage = ({ currentUser }) => {
             <button onClick={handlePost}>Post Button</button>
           </div>
         </div>
-      )}
     </div>
   );
 };
