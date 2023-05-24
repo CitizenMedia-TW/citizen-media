@@ -22,9 +22,8 @@ const App = () => {
     <Router>
       <Topbar currentUser={currentUser} setCurrentUser={setCurrentUser} />
       <Routes>
-        <Route exact path="/" element={<HomePage />} />
+        <Route path="/" element={<HomePage />} />
         <Route
-          exact
           path="/login"
           element={
             <LoginPage
@@ -33,22 +32,20 @@ const App = () => {
             />
           }
         />
-        <Route exact path="/popular" element={<PopularPage />} />
+        <Route path="/popular" element={<PopularPage />} />
         {/* SideBar */}
-        <Route exact path="/notify" element={<NotifyPage />} />
-        <Route exact path="/setting" element={<SettingPage />} />
+        <Route path="/notify" element={<NotifyPage />} />
+        <Route path="/setting" element={<SettingPage />} />
         <Route
-          exact
           path="/stories/draft"
           element={<DraftPage currentUser={currentUser} />}
         />
         <Route
-          exact
           path="/stories/my-stories"
           element={<MyStoriesPage currentUser={currentUser} />}
         />
-        <Route exact path="/collect" element={<CollectPage />} />
-        <Route exact path="/news/:id" element={<NewsPageMain />} />
+        <Route path="/collect" element={<CollectPage />} />
+        <Route path="/news/:id" element={<NewsPageMain />} />
       </Routes>
     </Router>
   );
